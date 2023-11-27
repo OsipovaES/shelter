@@ -26,11 +26,13 @@ module.exports = {
     },
     plugins: [
         new HtmlWebpackPlugin({
-            template: path.resolve(__dirname, 'src', 'index.html')
+            template: './src/main/index.html',
+            filename: 'main/index.html',
         }),
-        new MiniCssExtractPlugin({
-            filename: '[name].[contenthash].css',
-        })
+        new HtmlWebpackPlugin({ 
+            template: './src/pets/index.html',
+            filename: 'pets/index.html',
+        }),
     ],
     module: {
         rules: [
