@@ -1,4 +1,11 @@
 .button {
+    &_filled {
+        border-radius: 100px;
+        padding: 15px 45px;
+        background: $color-primary;
+        border: 0;
+        cursor: pointer;
+    }
     &_circle-left {
         background-image: url(../img/icons/arrow-left.svg);
     }

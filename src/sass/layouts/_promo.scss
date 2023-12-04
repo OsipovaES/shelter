@@ -1,9 +1,36 @@
 .promo {
     background: url(../img/backgrounds/noise_transparent@2x.png), radial-gradient(237.5% 111.8% at 0% 0%, #5B483A 0%, #262425 100%), #211F20;
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        height: 728px;
+    }
+    &__filling {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 3rem;
+        width: 46rem;
+    }
+    &__title {
+        color: $color-light;
+        font-family: Georgia;
+        font-size: 45px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 130%;
+    }
+    &__text {
+        color: $color-gray;
+        font-family: Arial;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 160%;
+    }
 }
 
-.content {
-    display: flex;
-    justify-content: space-between;
-}
+
 
