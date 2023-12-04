@@ -1,0 +1,9 @@
+.button {
+    &_circle-left {
+        background-image: url(../img/icons/arrow-left.svg);
+    }
+
+    &_circle-right {
+        background-image: url(../img/icons/arrow-right.svg);
+    }
+}

@@ -1,4 +1,19 @@
+//Fonts
 @import "./base/_fonts.css";
 
-@import "./base/constants";
-@import "./base/style";
+//Abstracts
+@import "./abstracts/constants";
+@import "./abstracts/mixins";
+@import "./abstracts/placeholders";
+
+//Base
+@import "./base/base";
+@import "./base/buttons";
+
+//Layouts
+@import "./layouts/header";
+@import "./layouts/promo";
+
+//Components
+@import "./components/navigation";
+
