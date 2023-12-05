@@ -1,7 +1,6 @@
 .header {
-    display: flex;
-    justify-content: space-between;
+    @include flex();
     height: 60px;
-    gap: 575px;
+    gap: 573px;
 }
 

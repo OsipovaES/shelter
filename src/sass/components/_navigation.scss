@@ -1,15 +1,12 @@
 .navigation {
     list-style-type: none;
-    display: flex;
+    @include flex();
+    gap: 35px;
     &__link {
+        @include font($size: 15px, $height: 160%);
+        @extend %font-add;
         color: $color-gray;
-        padding: 0 18px;
         text-decoration: none;
-        font-family: Arial;
-        font-size: 1.5rem;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 160%;
         cursor: pointer;
         transition: all .3s ease-out;
         &:hover {
