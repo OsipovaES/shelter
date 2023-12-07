@@ -1,0 +1,12 @@
+.help {
+    padding: 80px 40px 100px 40px;
+    &__wrapper {
+        @include flex($flex-dir: column);
+        height: 431px;
+        padding: 0px 87px;
+        gap: 60px;
+    }
+    &__title {
+        text-align: center;
+    }
+}
