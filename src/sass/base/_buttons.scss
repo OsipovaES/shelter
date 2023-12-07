@@ -1,16 +1,27 @@
 .button {
+    border-radius: 100px;
+    padding: 15px 45px;
+    letter-spacing: 1.02px;
+    border: 2px solid $color-primary;
+    cursor: pointer;
     &_filled {
         background: $color-primary;
-        border-radius: 100px;
-        padding: 15px 45px;
-        border: 0;
-        cursor: pointer;
     }
-    &_circle-left {
+    &_empty {
+        background-color: $color-card;
+    }
+    &_circle {
+        border: 2px solid $color-primary;
+        background-color: $color-light-add;
+        height: 30px;
+        padding: 23px;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    &_left {
         background-image: url(../img/icons/arrow-left.svg);
     }
-
-    &_circle-right {
+    &_right {
         background-image: url(../img/icons/arrow-right.svg);
     }
 }
