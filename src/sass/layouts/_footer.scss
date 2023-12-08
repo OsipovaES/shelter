@@ -1,0 +1,42 @@
+.footer {
+    background: url(../img/backgrounds/noise_transparent@2x.png), radial-gradient(549.89% 73.65% at 5.73% 50%, #513D2F 0%, #1A1A1C 100%), #211F20;
+    height: 350px;
+    &__wrapper {
+        @include flex($justify: space-between);
+        width: 1200px;
+        height: 310px;
+    }
+    &__left {
+        @include flex($flex-dir: column);
+        height: 234px;
+        width: 278px;
+        gap: 40px;
+    }
+    &__right {
+        @include flex($flex-dir: column);
+        height: 234px;
+        width: 302px;
+        gap: 40px;
+    }
+    &__title {
+        @include font($size: 35px, $height: 130%);
+        color: $color-light;
+        letter-spacing: 2.1px;
+        
+    }
+    &__contact {
+        @include flex();
+        @include font($size: 20px, $height: 115%);
+        color: $color-primary;
+        letter-spacing: 1.2px;
+    }
+    &__data {
+        @include font($size: 20px, $height: 115%);
+        color: $color-primary;
+        letter-spacing: 1.2px;
+        text-decoration: none;
+    }
+    &__image {
+        padding-top: 80px;
+    }
+}
