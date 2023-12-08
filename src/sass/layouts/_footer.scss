@@ -7,25 +7,23 @@
         height: 310px;
     }
     &__left {
-        @include flex($flex-dir: column);
-        height: 234px;
+        @include flex($flex-dir: column, $i-align: flex-start);
         width: 278px;
         gap: 40px;
     }
     &__right {
-        @include flex($flex-dir: column);
-        height: 234px;
+        @include flex($flex-dir: column, $i-align: flex-start);
         width: 302px;
-        gap: 40px;
+        gap: 33px;
     }
     &__title {
         @include font($size: 35px, $height: 130%);
         color: $color-light;
-        letter-spacing: 2.1px;
-        
+        letter-spacing: 2.1px; 
     }
     &__contact {
-        @include flex();
+        @include flex($justify: flex-start);
+        gap: 20px;
         @include font($size: 20px, $height: 115%);
         color: $color-primary;
         letter-spacing: 1.2px;
@@ -35,6 +33,16 @@
         color: $color-primary;
         letter-spacing: 1.2px;
         text-decoration: none;
+    }
+    &__icon {
+        &_mail, &_phone {
+            width: 40px;
+            height: 32px;
+        }
+        &_loc {
+            width: 22px;
+            height: 32px;
+        }
     }
     &__image {
         padding-top: 80px;
