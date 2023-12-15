@@ -12,6 +12,13 @@
         &:hover {
             color: $color-light;
         }
+        
+        .navigation_pets & {
+            color: $color-title;
+            &:hover {
+                color: $color-dark;
+            }
+        }
     }  
 }
 

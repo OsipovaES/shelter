@@ -22,17 +22,26 @@ h1 {
 }
 
 .logo {
+    text-decoration: none;
     &__title {
         color: $color-primary;
         @extend %font-prim;
         @include font($size: 32px, $height: 110%);
         letter-spacing: 1.92px;
+        
+        .logo_pets & {
+            color: $color-title;
+        }
         }
     &__text {
         color: $color-light;
         @extend %font-add;
         @include font($size: 13px, $height: 10%);
         letter-spacing: 1.3px;
+        
+        .logo_pets & {
+            color: $color-dark;
+        }
     }
 }
 

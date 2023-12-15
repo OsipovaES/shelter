@@ -1,0 +1,12 @@
+.friends {
+    background-color: $color-light-add;
+    height: 1342px;
+    padding: 80px 40px 100px 40px;
+    &__wrapper {
+        @include flex($t-align: center, $flex-dir: column);
+        gap: 45px;
+    }
+    &__title {
+        width: 400px;
+    }
+}

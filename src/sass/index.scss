@@ -18,8 +18,11 @@
 @import "./layouts/help";
 @import "./layouts/donation";
 @import "./layouts/footer";
+@import "./layouts/friends";
 
 //Components
 @import "./components/navigation";
 @import "./components/slider";
 @import "./components/help-list";
+@import "./components/_pagination";
+
