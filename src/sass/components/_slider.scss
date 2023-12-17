@@ -1,6 +1,11 @@
 .slider {
-    @include column();
-    gap: 60px;
+    @include flex($justify:space-between);
+    width: 1200px;
+    height: 435px;
+    &__wrapper {
+        @include flex();
+        gap: 90px;
+    }
     &__card {
         background-color: $color-card;
         border-radius: 10px;
@@ -10,9 +15,11 @@
 }
 
 .card {
+    @include flex($flex-dir: column);
+    gap: 10px;
     &__name {
         color: $color-title;
         @include font($size: 20px, $height: normal);
-        letter-spacing: 1.2px;
+        letter-spacing: 1.02px;
     }
 }

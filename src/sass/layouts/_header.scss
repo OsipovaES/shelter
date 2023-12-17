@@ -1,5 +1,8 @@
 .header {
     @include flex();
-    gap: 573px;
+    width: 1200px;
+    height: 60px;
+    padding: 25px 40px;
+    gap: 530px;
 }
 

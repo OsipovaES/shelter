@@ -1,19 +1,23 @@
 .about {
+    height: 588px;
     &__wrapper {
         @include flex();
+        padding-top: 83px;
+        height: 408px;
         gap: 120px;
-        padding: 80px 100px;
-        height: 480px;
     }
     &__content {
         @include flex($flex-dir:column);
         width: 430px;
         height: 380px; 
     }
+    &__title {
+       margin: 10px 0;
+    }
     &__text {
         color: $color-text;
         @extend %font-add;
-        @include font($size: 15px, $height: 150%);
+        @include font($size: 15px, $height: 160%);
     }
 }
 

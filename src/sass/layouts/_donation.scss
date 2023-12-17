@@ -13,17 +13,20 @@
     }
     &__subtitle {
         @include font ($size: 15px, $height: 110%);
+        margin: 0;
         color: $color-title;
         letter-spacing: 0.9px;
     }
     &__content {
         @include flex($flex-dir: column, $i-align: left);
         gap: 20px;
+        margin: 0;
         width: 380px;
         height: 282px;
     }
     &__card {
         background-color: $color-primary;
+        margin: 0;
         border-radius: 10px;
         @include flex();
         gap: 10px;
@@ -34,6 +37,7 @@
         height: 43px;
     }
     &__copyright {
+        margin: 0;
         @extend %font-add;
         color: $color-copyright;
         @include font ($size: 12px, $style: italic, $height: 150%);

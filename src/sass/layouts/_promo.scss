@@ -3,24 +3,31 @@
     height: 908px;
     &__content {
         @include flex();
-        padding: 92px 0;
-        gap: 75px;
+        width: 1200px;
         height: 728px;
+        padding: 32px 40px 0 40px;
+        gap: 42px;
     }
     &__filling {
         @include flex($flex-dir: column, $i-align: flex-start);
-        gap: 30px;
+        gap: 42px;
         width: 460px;
     }
     &__title {
+        margin: 0;
         color: $color-light;
         @extend %font-prim;
-        @include font($size: 45px, $height: 130%);
+        @include font($size: 44px, $height: 130%);
     }
     &__text {
+        width: 460px;
+        margin: 0;
         color: $color-gray;
         @extend %font-add;
         @include font($size: 15px, $height: 160%);
+    }
+    &__image {
+        padding-top: 85px;
     }
 }
 

@@ -7,13 +7,6 @@
     flex-wrap: $flex-wrap;
 }
 
- @mixin column () {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-}
-
 @mixin font ($size, $style:normal, $weight: 400, $height) {
     font-size: $size;
     font-style: $style;

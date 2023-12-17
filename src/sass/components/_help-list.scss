@@ -2,11 +2,12 @@
     @include flex($flex-wrap: wrap);
     width: 1026px;
     height: 281px;
-    row-gap: 50px;
-    column-gap: 110px;
+    row-gap: 40px;
+    column-gap: 118px;
     &__content {
         @include flex($flex-dir: column);
         @include font($size: 20px, $height: 115%);
+        gap:5px;
         color: $color-title;
         letter-spacing: 1.2px;
     }
