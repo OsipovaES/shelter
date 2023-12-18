@@ -2,11 +2,15 @@ html {
     font-size: 10px;
 }
 
-body {
+.body{
+    background: url(../img/backgrounds/noise_transparent@2x.png), radial-gradient(237.5% 111.8% at 0% 0%, #5B483A 0%, #262425 100%), #211F20;
     @extend %font-prim;
     font-size: 1.6rem;
     line-height: 2.6rem;
     font-weight: normal;
+    &_light {
+        background: $color-light;
+    }
 }
 
 .wrapper {

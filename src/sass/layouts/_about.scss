@@ -1,4 +1,5 @@
 .about {
+    background-color: $color-light;
     height: 588px;
     &__wrapper {
         @include flex();

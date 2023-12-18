@@ -6,26 +6,29 @@
     <link rel="icon" type="image/png" sizes="32x32" href="../img/icons/fav-icon192x192.png">
     <title>Pets</title>
 </head>
-<body>
-    <header class="header header_light">
-            <a href="../main/index.html" class="logo logo_pets">
-                <h1 class="logo__title">Cozy House</h1>
-                <p class="logo__text">Shelter for pets in Boston</p>
-            </a>
-            <nav class="header__navigation">
-                <ul class="navigation navigation_pets">
-                    <li><a class="navigation__link" href="#">About the shelter</a></li>
-                    <li><a class="navigation__link" href="../pets/index.html">Our pets</a></li>
-                    <li><a class="navigation__link" href="#">Help the shelter</a></li>
-                    <li><a class="navigation__link" href="#">Contacts</a></li>
-                </ul>
-            </nav>
-    </header>
+<body class="body body_light">
 
+    <div class="wrapper">
+    <header class="header header_light">
+        <a href="../main/index.html" class="logo logo_pets">
+            <h1 class="logo__title">Cozy House</h1>
+            <p class="logo__text">Shelter for pets in Boston</p>
+        </a>
+        <nav class="header__navigation">
+            <ul class="navigation navigation_pets">
+                <li><a class="navigation__link" href="#">About the shelter</a></li>
+                <li><a class="navigation__link" href="../pets/index.html">Our pets</a></li>
+                <li><a class="navigation__link" href="#">Help the shelter</a></li>
+                <li><a class="navigation__link" href="#">Contacts</a></li>
+            </ul>
+        </nav>
+    </header>
+    </div>
+    
     <section class="friends">
-        <div class="wrapper friends__wrapper">
-            <h1 class="friends__title">Our friends who are&nbsplooking for a house</h1>
-            <div class="slider">
+        <h1 class="friends__title">Our friends who are&nbsplooking for a house</h1>
+        <div class="slider-friends">
+            <div class="slider-friends__wrapper">
                 <div class="slider__card">
                     <div class="card">
                         <img class="card__image" src="../img/pets-content/pets-katrine.png" alt="">
@@ -83,14 +86,14 @@
                     </div>
                 </div>
             </div>
-            <div class="friend__pagination pagination">
+        </div>
+         <div class="friend__pagination pagination">
                 <button class="pagination__btn pagination__btn_dis" disabled="disabled">&lt;&lt;</button>
                 <button class="pagination__btn pagination__btn_dis" disabled="disabled">&lt;</button>
                 <button class="pagination__btn pagination__btn_fill">1</button>
                 <button class="pagination__btn">&gt;</button>
                 <button class="pagination__btn">&gt;&gt;</button>
             </div>
-        </div>
     </section>
 
     <footer class="footer">

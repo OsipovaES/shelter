@@ -1,12 +1,11 @@
 .friends {
     background-color: $color-light-add;
+    @include flex($t-align: center, $flex-dir: column);
     height: 1342px;
-    padding: 80px 40px 100px 40px;
-    &__wrapper {
-        @include flex($t-align: center, $flex-dir: column);
-        gap: 45px;
-    }
+    gap: 45px;
+    padding-bottom: 10px;
     &__title {
         width: 400px;
+        margin: 0;
     }
 }
