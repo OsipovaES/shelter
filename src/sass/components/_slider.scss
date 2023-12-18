@@ -1,36 +1,36 @@
 .slider {
     @include flex($justify:space-between);
-    width: 1200px;
-    height: 435px;
+    width: 120rem;
+    height: 43.5rem;
     &__wrapper {
         @include flex();
-        gap: 90px;
+        gap: 9rem;
     }
     &__card {
         background-color: $color-card;
-        border-radius: 10px;
-        width: 270px;
-        height: 435px;
+        border-radius: 1rem;
+        width: 27rem;
+        height: 43.5rem;
     }
 }
 
 .card {
     @include flex($flex-dir: column);
-    gap: 10px;
+    gap: 1rem;
     &__name {
         color: $color-title;
-        @include font($size: 20px, $height: normal);
-        letter-spacing: 1.02px;
+        @include font($size: 2rem, $height: normal);
+        letter-spacing: 0.102rem;
     }
 }
 
 .slider-friends {
     @include flex($flex-wrap: wrap);
-    width: 1200px;
-    height: 930px;
-    gap: 45px;
+    width: 120rem;
+    height: 93rem;
+    gap: 4.5rem;
     &__wrapper {
         @include flex($flex-wrap: wrap);
-        gap: 40px;
+        gap: 4rem;
     }
 }

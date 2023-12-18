@@ -1,7 +1,7 @@
 .button {
-    border-radius: 100px;
-    padding: 15px 45px;
-    letter-spacing: 1.02px;
+    border-radius: 10rem;
+    padding: 1.5rem 4.5rem;
+    letter-spacing: 0.102rem;
     border: 2px solid $color-primary;
     cursor: pointer;
     &_filled {
@@ -13,8 +13,8 @@
     &_circle {
         border: 2px solid $color-primary;
         background-color: $color-light-add;
-        height: 30px;
-        padding: 23px;
+        height: 3rem;
+        padding: 2.3rem;
         background-repeat: no-repeat;
         background-position: center;
     }

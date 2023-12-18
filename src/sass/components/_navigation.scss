@@ -1,9 +1,9 @@
 .navigation {
     list-style-type: none;
     @include flex();
-    gap: 35px;
+    gap: 3.5rem;
     &__link {
-        @include font($size: 15px, $height: 160%);
+        @include font($size: 1.5rem, $height: 160%);
         @extend %font-add;
         color: $color-gray;
         text-decoration: none;

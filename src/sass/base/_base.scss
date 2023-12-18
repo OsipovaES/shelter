@@ -14,15 +14,15 @@ html {
 }
 
 .wrapper {
-    width: 1280px;
+    width: 128rem;
     margin: auto;
 }
 
 h1 {
     @extend %font-prim;
     color: $color-title;
-    @include font($size: 35px, $height: 130%);
-    letter-spacing: 2.1px;
+    @include font($size: 3.5rem, $height: 130%);
+    letter-spacing: 0.21rem;
 }
 
 .logo {
@@ -30,18 +30,18 @@ h1 {
     &__title {
         color: $color-primary;
         @extend %font-prim;
-        @include font($size: 32px, $height: 110%);
-        letter-spacing: 1.92px;
+        @include font($size: 3.2rem, $height: 110%);
+        letter-spacing: 0.192rem;
         
         .logo_pets & {
             color: $color-title;
         }
-        }
+    }
     &__text {
         color: $color-light;
         @extend %font-add;
-        @include font($size: 13px, $height: 10%);
-        letter-spacing: 1.3px;
+        @include font($size: 1.3rem, $height: 10%);
+        letter-spacing: 0.13rem;
         
         .logo_pets & {
             color: $color-dark;

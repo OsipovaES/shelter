@@ -1,45 +1,45 @@
 .donation {
     background-color: $color-light-add;
-    padding: 80px 182px 100px 183px;
+    padding: 8rem 18.2rem 10rem 18.3rem;
     &__wrapper {
         @include flex();
-        gap: 30px;
-        width: 915px;
-        height: 282px;
+        gap: 3rem;
+        width: 91.5rem;
+        height: 28.2rem;
     }
     &__title {
         margin: 0;
-        width: 300px;
+        width: 30rem;
     }
     &__subtitle {
-        @include font ($size: 15px, $height: 110%);
+        @include font ($size: 1.5rem, $height: 110%);
         margin: 0;
         color: $color-title;
-        letter-spacing: 0.9px;
+        letter-spacing: 0.09rem;
     }
     &__content {
         @include flex($flex-dir: column, $i-align: left);
-        gap: 20px;
+        gap: 2rem;
         margin: 0;
-        width: 380px;
-        height: 282px;
+        width: 38rem;
+        height: 28.2rem;
     }
     &__card {
         background-color: $color-primary;
         margin: 0;
-        border-radius: 10px;
+        border-radius: 1rem;
         @include flex();
-        gap: 10px;
-        @include font ($size: 20px, $height: 115%);
+        gap: 1rem;
+        @include font ($size: 2rem, $height: 115%);
         color: $color-title;
-        letter-spacing: 1.2px;
-        width: 350px;
-        height: 43px;
+        letter-spacing: 0.12rem;
+        width: 35rem;
+        height: 4.3rem;
     }
     &__copyright {
         margin: 0;
         @extend %font-add;
         color: $color-copyright;
-        @include font ($size: 12px, $style: italic, $height: 150%);
+        @include font ($size: 1.2rem, $style: italic, $height: 150%);
     }
 }

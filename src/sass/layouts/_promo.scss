@@ -1,32 +1,32 @@
 .promo {
-    height: 908px;
+    height: 90.8rem;
     &__content {
         @include flex();
-        width: 1200px;
-        height: 728px;
-        padding: 32px 40px 0 40px;
-        gap: 42px;
+        width: 120rem;
+        height: 72.8rem;
+        padding: 3.2rem 4rem 0 4rem;
+        gap: 4.2rem;
     }
     &__filling {
         @include flex($flex-dir: column, $i-align: flex-start);
-        gap: 42px;
-        width: 460px;
+        gap: 4.2rem;
+        width: 46rem;
     }
     &__title {
         margin: 0;
         color: $color-light;
         @extend %font-prim;
-        @include font($size: 44px, $height: 130%);
+        @include font($size: 4.4rem, $height: 130%);
     }
     &__text {
-        width: 460px;
+        width: 46rem;
         margin: 0;
         color: $color-gray;
         @extend %font-add;
-        @include font($size: 15px, $height: 160%);
+        @include font($size: 1.5rem, $height: 160%);
     }
     &__image {
-        padding-top: 85px;
+        padding-top: 8.5rem;
     }
 }
 

@@ -1,13 +1,13 @@
 .pagination {
     @include flex();
-    gap: 20px;
+    gap: 2rem;
     &__btn {
         border-radius: 100%;
         border: 2px solid $color-primary;
         background-color: $color-light-add;
-        width: 52px;
-        height: 52px;
-        padding: 14px 0px 15px 0px;  
+        width: 5.2rem;
+        height: 5.2rem;
+        padding: 1.4rem 0 1.5rem 0;  
         &_dis {
             border: 2px solid $color-gray;
         }

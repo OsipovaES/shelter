@@ -1,10 +1,10 @@
 .help {
     background-color: $color-light;
-    padding: 80px 0 100px 0;
+    padding: 8rem 0 10rem 0;
     &__wrapper {
         @include flex($flex-dir: column);
-        height: 431px;
-        gap: 60px;
+        height: 43.1rem;
+        gap: 6rem;
     }
     &__title {
         margin: 0;
