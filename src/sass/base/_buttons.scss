@@ -1,0 +1,27 @@
+.button {
+    border-radius: 10rem;
+    padding: 1.5rem 4.5rem;
+    letter-spacing: 0.102rem;
+    border: 2px solid $color-primary;
+    cursor: pointer;
+    &_filled {
+        background: $color-primary;
+    }
+    &_empty {
+        background-color: $color-card;
+    }
+    &_circle {
+        border: 2px solid $color-primary;
+        background-color: $color-light-add;
+        height: 3rem;
+        padding: 2.3rem;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    &_left {
+        background-image: url(../img/icons/arrow-left.svg);
+    }
+    &_right {
+        background-image: url(../img/icons/arrow-right.svg);
+    }
+}

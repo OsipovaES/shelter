@@ -1,0 +1,14 @@
+.help-list {
+    @include flex($flex-wrap: wrap);
+    width: 102.6rem;
+    height: 28.1rem;
+    row-gap: 4rem;
+    column-gap: 11.8rem;
+    &__content {
+        @include flex($flex-dir: column);
+        @include font($size: 2rem, $height: 115%);
+        gap: 0.5rem;
+        color: $color-title;
+        letter-spacing: 0.12rem;
+    }
+}

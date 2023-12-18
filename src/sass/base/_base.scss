@@ -1,0 +1,51 @@
+html {
+    font-size: 10px;
+}
+
+.body{
+    background: url(../img/backgrounds/noise_transparent@2x.png), radial-gradient(237.5% 111.8% at 0% 0%, #5B483A 0%, #262425 100%), #211F20;
+    @extend %font-prim;
+    font-size: 1.6rem;
+    line-height: 2.6rem;
+    font-weight: normal;
+    &_light {
+        background: $color-light;
+    }
+}
+
+.wrapper {
+    width: 128rem;
+    margin: auto;
+}
+
+h1 {
+    @extend %font-prim;
+    color: $color-title;
+    @include font($size: 3.5rem, $height: 130%);
+    letter-spacing: 0.21rem;
+}
+
+.logo {
+    text-decoration: none;
+    &__title {
+        color: $color-primary;
+        @extend %font-prim;
+        @include font($size: 3.2rem, $height: 110%);
+        letter-spacing: 0.192rem;
+        
+        .logo_pets & {
+            color: $color-title;
+        }
+    }
+    &__text {
+        color: $color-light;
+        @extend %font-add;
+        @include font($size: 1.3rem, $height: 10%);
+        letter-spacing: 0.13rem;
+        
+        .logo_pets & {
+            color: $color-dark;
+        }
+    }
+}
+

@@ -1,0 +1,26 @@
+.about {
+    background-color: $color-light;
+    height: 58.8rem;
+    &__wrapper {
+        @include flex();
+        padding-top: 8.3rem;
+        height: 40.8rem;
+        gap: 12rem;
+    }
+    &__content {
+        @include flex($flex-dir:column);
+        width: 43rem;
+        height: 38rem; 
+    }
+    &__title {
+       margin: 1rem 0;
+    }
+    &__text {
+        color: $color-text;
+        @extend %font-add;
+        @include font($size: 1.5rem, $height: 160%);
+    }
+}
+
+
+
