@@ -1,0 +1,14 @@
+.pets {
+    background-color: $color-light-add;
+    padding: 8rem 0 10rem 0;
+    &__wrapper {
+        @include flex($flex-dir: column);
+        width: 120rem;
+        height: 69.7rem;
+        gap: 6rem;
+    }
+    &__title {
+        text-align: center;
+        margin: 0;
+    }
+}
