@@ -1,8 +1,10 @@
 .navigation {
+    margin: 0;
     list-style-type: none;
     @include flex();
     gap: 3.5rem;
     &__link {
+        margin: 0;
         @include font($size: 1.5rem, $height: 160%);
         @extend %font-add;
         color: $color-gray;
