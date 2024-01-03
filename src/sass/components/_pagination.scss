@@ -8,10 +8,17 @@
         width: 5.2rem;
         height: 5.2rem;
         padding: 1.4rem 0 1.5rem 0;  
-        &_dis {
+        cursor: pointer;
+        &_disabled {
             border: 2px solid $color-gray;
         }
         &_fill {
+            background-color: $color-primary;
+        }
+        &:hover:not(:disabled) {
+            background-color: $color-active;
+        }
+        &:active:not(:disabled) {
             background-color: $color-primary;
         }
     }  

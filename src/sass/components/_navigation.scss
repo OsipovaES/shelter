@@ -10,9 +10,11 @@
         color: $color-gray;
         text-decoration: none;
         cursor: pointer;
-        transition: all .3s ease-out;
         &:hover {
             color: $color-light;
+            text-decoration: underline $color-primary 0.3rem;
+            text-underline-offset: 1rem;
+            transition: all .3s ease-out;
         }
         
         .navigation_pets & {

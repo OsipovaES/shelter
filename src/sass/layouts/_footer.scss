@@ -4,12 +4,12 @@
         @include flex($justify: space-between);
         width: 120rem;
     }
-    &__left {
+    &__contacts {
         @include flex($flex-dir: column, $i-align: flex-start);
         width: 27.8rem;
         gap: 4rem;
     }
-    &__right {
+    &__location {
         @include flex($flex-dir: column, $i-align: flex-start);
         width: 30.2rem;
         gap: 3.3rem;

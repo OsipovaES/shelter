@@ -24,4 +24,10 @@
     &_right {
         background-image: url(../img/icons/arrow-right.svg);
     }
+    &:hover {
+        background-color: $color-active;
+    }
+    &:active {
+        background-color: $color-primary;
+    }
 }
