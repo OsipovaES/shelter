@@ -1,7 +1,7 @@
 .help-list {
     @include flex($flex-wrap: wrap);
-    width: 102.6rem;
-    height: 28.1rem;
+    max-width: 128rem;
+    width: 93%;
     row-gap: 4rem;
     column-gap: 11.8rem;
     &__content {

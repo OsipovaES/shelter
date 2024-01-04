@@ -3,8 +3,8 @@
     padding: 8rem 0 10rem 0;
     &__wrapper {
         @include flex($flex-dir: column);
-        width: 120rem;
-        height: 69.7rem;
+        max-width: 128rem;
+        width: 100%;;
         gap: 6rem;
     }
     &__title {

@@ -2,7 +2,14 @@
     background: url(../img/backgrounds/noise_transparent@2x.png), radial-gradient(237.5% 111.8% at 0% 0%, #5B483A 0%, #262425 100%), #211F20;
     &__wrapper {
         @include flex($justify: space-between);
-        width: 120rem;
+        max-width: 128rem;
+        width: 94%;
+        @include media-tablet {
+            padding-top: 3rem;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 6rem;
+        }
     }
     &__contacts {
         @include flex($flex-dir: column, $i-align: flex-start);

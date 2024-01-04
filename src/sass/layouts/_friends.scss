@@ -1,9 +1,8 @@
 .friends {
     background-color: $color-light-add;
     @include flex($t-align: center, $flex-dir: column);
-    height: 134.2rem;
-    gap: 4.5rem;
-    padding-bottom: 1rem;
+    gap: 6rem;
+    padding: 8rem 4rem 10rem 4rem;
     &__title {
         width: 40rem;
         margin: 0;

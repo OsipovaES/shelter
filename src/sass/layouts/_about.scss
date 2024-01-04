@@ -1,11 +1,14 @@
 .about {
     background-color: $color-light;
-    height: 58.8rem;
     &__wrapper {
         @include flex();
-        width: 120rem;
-        padding-top: 8rem;
+        max-width: 128rem;
+        width: 100%;
+        padding: 8rem 4rem 9rem 4rem;
         gap: 12rem;
+        @include media-tablet {
+            flex-direction: column;
+        }
     }
     &__content {
         @include flex($flex-dir:column);

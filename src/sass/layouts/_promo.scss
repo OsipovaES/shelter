@@ -5,10 +5,14 @@
     }
     &__content {
         @include flex($i-align: flex-start);
+        height: 72.8rem;
         max-width: 128rem;
         width: 100%;
-        height: 72.8rem;
+        padding: 0 4rem;
         gap: 4.2rem;
+        @include media-tablet {
+            flex-direction: column;
+        }
     }
     &__filling {
         @include flex($flex-dir: column, $i-align: flex-start, $justify: flex-start);

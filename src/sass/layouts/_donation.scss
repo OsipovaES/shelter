@@ -4,8 +4,11 @@
     &__wrapper {
         @include flex();
         gap: 3rem;
-        width: 91.5rem;
-        height: 28.2rem;
+        max-width: 128rem;
+        width: 100%;
+        @include media-tablet {
+            flex-direction: column;
+        }
     }
     &__title {
         margin: 0;
@@ -22,7 +25,6 @@
         gap: 2rem;
         margin: 0;
         width: 38rem;
-        height: 28.2rem;
     }
     &__card {
         background-color: $color-primary;
