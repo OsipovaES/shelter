@@ -22,4 +22,10 @@
             background-color: $color-primary;
         }
     }  
+    @include media-tablet {
+        padding: 3rem;
+    }
+    @include media-mobile {
+        gap: 1rem;
+    }
 }

@@ -16,6 +16,15 @@
             text-underline-offset: 1rem;
             transition: all .3s ease-out;
         }
+        @include media-mobile {
+            @include font($size: 3.2rem, $height: 160%);
+            &:active {
+                color: $color-light;
+                text-decoration: underline $color-primary 0.3rem;
+                text-underline-offset: 1rem;
+                transition: all .3s ease-out;
+            }
+        }
         
         .navigation_pets & {
             color: $color-title;
@@ -23,6 +32,19 @@
                 color: $color-dark;
             }
         }
+    }
+    @include media-mobile {
+        @include flex($flex-dir:column);
+        top: 0;
+        right: 0;
+        position: absolute;
+        padding: 4.2rem 0;
+        margin: 0;
+        background: $color-dark;
+        list-style-type: none;
+        transform: translateX(-140%);
+        height: 82.3rem;
+        max-width: 32rem;
+        width: 100%;
     }  
 }
-

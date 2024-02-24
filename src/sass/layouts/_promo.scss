@@ -2,6 +2,12 @@
     &__wrapper {
         @include flex($flex-dir: column);
         gap: 6rem;
+        @include media-tablet {
+            gap: 3rem;
+        }
+        @include media-mobile {
+            gap: 3rem;
+        }
     }
     &__content {
         @include flex($i-align: flex-start);
@@ -12,6 +18,13 @@
         gap: 4.2rem;
         @include media-tablet {
             flex-direction: column;
+            height: auto;
+            align-items: center;
+            gap: 10rem;
+        }
+        @include media-mobile {
+            padding: 0 1rem;
+            gap: 10.5rem;
         }
     }
     &__filling {
@@ -20,19 +33,51 @@
         gap: 4.2rem;
         max-width: 46rem;
         width: 100%;
+        @include media-tablet {
+            padding: 0;
+            :nth-child(3) {
+                margin: auto;
+            }
+        }
+        @include media-mobile {
+            text-align: center;
+        }
     }
     &__title {
         margin: 0;
         color: $color-light;
         @extend %font-prim;
         @include font($size: 4.4rem, $height: 130%);
+        @include media-mobile {
+            font-size: 2.5rem;
+            margin: auto;
+            letter-spacing: 0.15rem;
+        }
     }
     &__text {
-        width: 46rem;
+        max-width: 46rem;
+        width: 100%;
         margin: 0;
         color: $color-gray;
         @extend %font-add;
         @include font($size: 1.5rem, $height: 160%);
+        @include media-mobile {
+            
+        }
+    }
+    &__image {
+        display: flex;
+        @include media-tablet {
+            width: 56.9rem;
+            height: 59.3rem;
+            margin-left: 14rem;
+        }
+        @include media-mobile {
+            width: 26rem;
+            height: 27.2rem;
+            margin: 0;
+            margin-left: 4rem;
+        }
     }
 }
 

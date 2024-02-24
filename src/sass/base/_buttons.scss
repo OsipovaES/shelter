@@ -20,9 +20,15 @@
     }
     &_left {
         background-image: url(../img/icons/arrow-left.svg);
+        @include media-mobile {
+            order: 2;
+        }
     }
     &_right {
         background-image: url(../img/icons/arrow-right.svg);
+        @include media-mobile {
+            order: 3;
+        }
     }
     &:hover {
         background-color: $color-active;
