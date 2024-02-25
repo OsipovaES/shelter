@@ -4,6 +4,7 @@
     letter-spacing: 0.102rem;
     border: 2px solid $color-primary;
     cursor: pointer;
+    color: $color-dark;
     &_filled {
         background: $color-primary;
     }
