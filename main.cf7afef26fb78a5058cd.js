@@ -10244,13 +10244,22 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.promo__title, .logo__title, h1, .body
   font-family: "Arial", "Verdana", sans-serif;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 html {
   font-size: 10px;
   scroll-behavior: smooth;
 }
-
-* {
-  box-sizing: border-box;
+@media screen and (min-width: 320px) {
+  html::-webkit-scrollbar {
+    width: 0.5rem;
+  }
+  html::-webkit-scrollbar-thumb {
+    background-color: #FFF;
+    border-radius: 1rem;
+  }
 }
 
 .body {
@@ -10277,7 +10286,7 @@ h1 {
   line-height: 130%;
   letter-spacing: 0.21rem;
 }
-@media (max-width: 568px) {
+@media (max-width: 576px) {
   h1 {
     font-size: 2.5rem;
     letter-spacing: 0.15rem;
@@ -10323,7 +10332,7 @@ h1 {
 .button {
   border-radius: 10rem;
   padding: 1.5rem 4.5rem;
-  letter-spacing: 0.102rem;
+  letter-spacing: 1.3px;
   border: 2px solid #F1CDB3;
   cursor: pointer;
   color: #292929;
@@ -10345,7 +10354,7 @@ h1 {
 .button_left {
   background-image: url(${___CSS_LOADER_URL_REPLACEMENT_1___});
 }
-@media (max-width: 568px) {
+@media (max-width: 576px) {
   .button_left {
     order: 2;
   }
@@ -10353,7 +10362,7 @@ h1 {
 .button_right {
   background-image: url(${___CSS_LOADER_URL_REPLACEMENT_2___});
 }
-@media (max-width: 568px) {
+@media (max-width: 576px) {
   .button_right {
     order: 3;
   }
@@ -10381,7 +10390,7 @@ h1 {
     padding: 3rem;
   }
 }
-@media (max-width: 568px) {
+@media (max-width: 576px) {
   .header {
     padding: 3rem 2rem;
   }
@@ -10401,7 +10410,7 @@ h1 {
     gap: 3rem;
   }
 }
-@media (max-width: 568px) {
+@media (max-width: 576px) {
   .promo__wrapper {
     gap: 3rem;
   }
@@ -10419,6 +10428,14 @@ h1 {
   padding: 0 4rem;
   gap: 4.2rem;
 }
+@media (max-width: 990px) {
+  .promo__content {
+    flex-direction: column;
+    height: auto;
+    align-items: center;
+    gap: 5rem;
+  }
+}
 @media (max-width: 768px) {
   .promo__content {
     flex-direction: column;
@@ -10427,7 +10444,7 @@ h1 {
     gap: 10rem;
   }
 }
-@media (max-width: 568px) {
+@media (max-width: 576px) {
   .promo__content {
     padding: 0 1rem;
     gap: 10.5rem;
@@ -10445,6 +10462,11 @@ h1 {
   max-width: 46rem;
   width: 100%;
 }
+@media (max-width: 990px) {
+  .promo__filling {
+    padding: 1rem;
+  }
+}
 @media (max-width: 768px) {
   .promo__filling {
     padding: 0;
@@ -10453,7 +10475,7 @@ h1 {
     margin: auto;
   }
 }
-@media (max-width: 568px) {
+@media (max-width: 576px) {
   .promo__filling {
     text-align: center;
   }
@@ -10466,7 +10488,7 @@ h1 {
   font-weight: 400;
   line-height: 130%;
 }
-@media (max-width: 568px) {
+@media (max-width: 576px) {
   .promo__title {
     font-size: 2.5rem;
     margin: auto;
@@ -10486,6 +10508,13 @@ h1 {
 .promo__image {
   display: flex;
 }
+@media (max-width: 990px) {
+  .promo__image {
+    width: 56.9rem;
+    height: 59.3rem;
+    margin-left: 14rem;
+  }
+}
 @media (max-width: 768px) {
   .promo__image {
     width: 56.9rem;
@@ -10493,7 +10522,14 @@ h1 {
     margin-left: 14rem;
   }
 }
-@media (max-width: 568px) {
+@media (max-width: 715px) {
+  .promo__image {
+    width: 40rem;
+    height: auto;
+    margin-left: 4rem;
+  }
+}
+@media (max-width: 576px) {
   .promo__image {
     width: 26rem;
     height: 27.2rem;
@@ -10523,7 +10559,7 @@ h1 {
     gap: 8rem;
   }
 }
-@media (max-width: 568px) {
+@media (max-width: 576px) {
   .about__wrapper {
     padding: 4.2rem 1rem 3.5rem 1rem;
     gap: 3.5rem;
@@ -10531,7 +10567,7 @@ h1 {
 }
 .about__content {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   text-align: left;
   justify-content: center;
   flex-direction: column;
@@ -10540,7 +10576,7 @@ h1 {
   max-width: 43rem;
   width: 100%;
 }
-@media (max-width: 568px) {
+@media (max-width: 576px) {
   .about__content {
     text-align: center;
     width: 90%;
@@ -10557,12 +10593,12 @@ h1 {
   font-weight: 400;
   line-height: 160%;
 }
-@media (max-width: 568px) {
+@media (max-width: 576px) {
   .about__text {
     text-align: justify;
   }
 }
-@media (max-width: 568px) {
+@media (max-width: 576px) {
   .about__image {
     width: 26rem;
     height: 35.3rem;
@@ -10573,7 +10609,7 @@ h1 {
   background-color: #F6F6F6;
   padding: 8rem 0 10rem 0;
 }
-@media (max-width: 568px) {
+@media (max-width: 576px) {
   .pets {
     padding: 4.2rem 1rem;
   }
@@ -10589,7 +10625,7 @@ h1 {
   width: 100%;
   gap: 6rem;
 }
-@media (max-width: 568px) {
+@media (max-width: 576px) {
   .pets__wrapper {
     gap: 4.3rem;
   }
@@ -10601,14 +10637,14 @@ h1 {
 
 .help {
   background-color: #FFF;
-  padding: 8rem 0 8.5rem 0;
+  padding: 8rem 0 10rem 0;
 }
 @media (max-width: 768px) {
   .help {
     padding-bottom: 8.8rem;
   }
 }
-@media (max-width: 568px) {
+@media (max-width: 576px) {
   .help {
     padding: 4.2rem 0;
   }
@@ -10624,7 +10660,12 @@ h1 {
   max-width: 128rem;
   width: 100%;
 }
-@media (max-width: 568px) {
+@media (max-width: 768px) {
+  .help__wrapper {
+    gap: 6rem;
+  }
+}
+@media (max-width: 576px) {
   .help__wrapper {
     gap: 4.2rem;
   }
@@ -10638,7 +10679,17 @@ h1 {
   background-color: #F6F6F6;
   padding: 8rem 18.2rem 10rem 18.3rem;
 }
-@media (max-width: 568px) {
+@media (max-width: 576px) {
+  .donation {
+    padding: 4.2rem 1rem;
+  }
+}
+@media (max-width: 715px) {
+  .donation {
+    padding: 5rem;
+  }
+}
+@media (max-width: 576px) {
   .donation {
     padding: 4.2rem 1rem;
   }
@@ -10654,13 +10705,18 @@ h1 {
   max-width: 128rem;
   width: 100%;
 }
+@media (max-width: 990px) {
+  .donation__wrapper {
+    flex-direction: column;
+  }
+}
 @media (max-width: 768px) {
   .donation__wrapper {
     flex-direction: column-reverse;
     gap: 6rem;
   }
 }
-@media (max-width: 568px) {
+@media (max-width: 576px) {
   .donation__wrapper {
     gap: 4rem;
   }
@@ -10670,7 +10726,7 @@ h1 {
   max-width: 30rem;
   width: 100%;
 }
-@media (max-width: 568px) {
+@media (max-width: 576px) {
   .donation__title {
     max-width: 22rem;
     width: 100%;
@@ -10686,7 +10742,7 @@ h1 {
   color: #545454;
   letter-spacing: 0.09rem;
 }
-@media (max-width: 568px) {
+@media (max-width: 576px) {
   .donation__subtitle {
     line-height: 160%;
     letter-spacing: 0;
@@ -10704,7 +10760,7 @@ h1 {
   max-width: 38rem;
   width: 100%;
 }
-@media (max-width: 568px) {
+@media (max-width: 576px) {
   .donation__content {
     width: 95%;
     text-align: center;
@@ -10730,7 +10786,7 @@ h1 {
   width: 35rem;
   height: 4.3rem;
 }
-@media (max-width: 568px) {
+@media (max-width: 576px) {
   .donation__card {
     font-size: 1.5rem;
     width: 28rem;
@@ -10745,12 +10801,12 @@ h1 {
   font-weight: 400;
   line-height: 150%;
 }
-@media (max-width: 568px) {
+@media (max-width: 576px) {
   .donation__copyright {
     text-align: justify;
   }
 }
-@media (max-width: 568px) {
+@media (max-width: 576px) {
   .donation__image {
     width: 26rem;
     height: 13.5rem;
@@ -10770,6 +10826,14 @@ h1 {
   max-width: 128rem;
   width: 94%;
 }
+@media (max-width: 990px) {
+  .footer__wrapper {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 6rem;
+    padding-top: 5rem;
+  }
+}
 @media (max-width: 768px) {
   .footer__wrapper {
     padding-top: 3rem;
@@ -10780,7 +10844,7 @@ h1 {
     row-gap: 2.5rem;
   }
 }
-@media (max-width: 568px) {
+@media (max-width: 576px) {
   .footer__wrapper {
     row-gap: 4rem;
   }
@@ -10796,7 +10860,7 @@ h1 {
   width: 100%;
   gap: 4rem;
 }
-@media (max-width: 568px) {
+@media (max-width: 576px) {
   .footer__contacts {
     align-items: center;
   }
@@ -10812,7 +10876,7 @@ h1 {
   width: 100%;
   gap: 3.3rem;
 }
-@media (max-width: 568px) {
+@media (max-width: 576px) {
   .footer__location {
     gap: 4rem;
   }
@@ -10826,7 +10890,7 @@ h1 {
   color: #FFF;
   letter-spacing: 0.21rem;
 }
-@media (max-width: 568px) {
+@media (max-width: 576px) {
   .footer__title {
     letter-spacing: 0.15rem;
     font-size: 2.5rem;
@@ -10872,7 +10936,7 @@ h1 {
 .footer__image {
   padding-top: 4rem;
 }
-@media (max-width: 568px) {
+@media (max-width: 576px) {
   .footer__image {
     width: 26rem;
     padding-top: 0;
@@ -10900,7 +10964,7 @@ h1 {
     padding: 8rem 4rem 4.5rem 4rem;
   }
 }
-@media (max-width: 568px) {
+@media (max-width: 576px) {
   .friends {
     gap: 1rem;
     padding: 4rem 2rem 1.5rem 2rem;
@@ -10908,6 +10972,7 @@ h1 {
 }
 
 .navigation {
+  padding: 0;
   margin: 0;
   list-style-type: none;
   display: flex;
@@ -10916,10 +10981,11 @@ h1 {
   justify-content: center;
   flex-direction: row;
   flex-wrap: nowrap;
-  gap: 3.5rem;
+  gap: 3.45rem;
 }
 .navigation__link {
   margin: 0;
+  padding: 0;
   font-size: 1.5rem;
   font-style: normal;
   font-weight: 400;
@@ -10940,7 +11006,7 @@ h1 {
   text-underline-offset: 1rem;
   transition: all 0.3s ease-out;
 }
-@media (max-width: 568px) {
+@media (max-width: 576px) {
   .navigation__link {
     font-size: 3.2rem;
     font-style: normal;
@@ -10962,10 +11028,15 @@ h1 {
 .navigation_pets .navigation__link {
   color: #545454;
 }
-.navigation_pets .navigation__link:hover {
-  color: #292929;
+@media (max-width: 731px) {
+  .navigation_pets .navigation__link {
+    color: #CDCDCD;
+  }
+  .navigation_pets .navigation__link:hover {
+    color: #FFF;
+  }
 }
-@media (max-width: 568px) {
+@media (max-width: 731px) {
   .navigation {
     display: flex;
     align-items: center;
@@ -10980,7 +11051,7 @@ h1 {
     margin: 0;
     background: #292929;
     list-style-type: none;
-    transform: translateX(-180%);
+    transform: translateX(-250%);
     height: 82.3rem;
     max-width: 32rem;
     width: 100%;
@@ -11002,7 +11073,7 @@ h1 {
     width: 92%;
   }
 }
-@media (max-width: 568px) {
+@media (max-width: 576px) {
   .slider {
     flex-wrap: wrap;
     row-gap: 2rem;
@@ -11020,6 +11091,19 @@ h1 {
   max-width: 128rem;
   width: 100%;
 }
+@media (max-width: 1126px) {
+  .slider__wrapper {
+    gap: 6rem;
+  }
+  .slider__wrapper .card:nth-child(n+3) {
+    display: none;
+  }
+}
+@media (max-width: 715px) {
+  .slider__wrapper .card:nth-child(n+2) {
+    display: none;
+  }
+}
 @media (max-width: 768px) {
   .slider__wrapper {
     gap: 4rem;
@@ -11028,7 +11112,7 @@ h1 {
     display: none;
   }
 }
-@media (max-width: 568px) {
+@media (max-width: 576px) {
   .slider__wrapper .card:nth-child(n+2) {
     display: none;
   }
@@ -11075,7 +11159,7 @@ h1 {
   justify-content: center;
   flex-direction: row;
   flex-wrap: wrap;
-  gap: 3rem 4rem;
+  gap: 3rem 3.8rem;
 }
 @media (max-width: 768px) {
   .slider-friends__wrapper {
@@ -11085,7 +11169,7 @@ h1 {
     display: none;
   }
 }
-@media (max-width: 568px) {
+@media (max-width: 576px) {
   .slider-friends__wrapper .card:nth-child(n+4) {
     display: none;
   }
@@ -11100,16 +11184,16 @@ h1 {
   flex-wrap: wrap;
   max-width: 128rem;
   width: 93%;
-  row-gap: 4rem;
+  row-gap: 5.5rem;
   -moz-column-gap: 11.8rem;
        column-gap: 11.8rem;
 }
 @media (max-width: 768px) {
   .help-list {
-    gap: 5rem;
+    gap: 5rem 5.5rem;
   }
 }
-@media (max-width: 568px) {
+@media (max-width: 576px) {
   .help-list {
     gap: 3rem;
   }
@@ -11125,7 +11209,7 @@ h1 {
   font-style: normal;
   font-weight: 400;
   line-height: 115%;
-  gap: 0.5rem;
+  gap: 3rem;
   color: #545454;
   letter-spacing: 0.12rem;
 }
@@ -11133,10 +11217,10 @@ h1 {
   .help-list__content {
     width: 18rem;
     height: 12rem;
-    gap: 1rem;
+    gap: 3rem;
   }
 }
-@media (max-width: 568px) {
+@media (max-width: 576px) {
   .help-list__content {
     font-size: 1.5rem;
     gap: 2rem;
@@ -11144,7 +11228,7 @@ h1 {
     height: auto;
   }
 }
-@media (max-width: 568px) {
+@media (max-width: 576px) {
   .help-list__image {
     width: 5rem;
     height: 5rem;
@@ -11175,6 +11259,8 @@ h1 {
 }
 .pagination__btn_disabled {
   border: 2px solid #CDCDCD;
+  color: #CDCDCD;
+  cursor: not-allowed;
 }
 .pagination__btn_fill {
   background-color: #F1CDB3;
@@ -11190,7 +11276,7 @@ h1 {
     padding: 3rem;
   }
 }
-@media (max-width: 568px) {
+@media (max-width: 576px) {
   .pagination {
     gap: 1rem;
   }
@@ -11208,10 +11294,10 @@ h1 {
   position: relative;
   border: none;
   background: transparent;
-  width: 40px;
-  height: 26px;
+  width: 30px;
+  height: 24px;
 }
-@media (max-width: 568px) {
+@media (max-width: 731px) {
   .burger {
     display: block;
   }
@@ -11224,9 +11310,9 @@ h1 {
   position: absolute;
   display: block;
   width: 100%;
-  height: 4px;
-  border-radius: 10px;
+  height: 2px;
   background: #F1CDB3;
+  border-radius: 5rem;
 }
 
 .burger::before {
@@ -11255,7 +11341,7 @@ h1 {
 
 .burger-checkbox:checked ~ .navigation {
   transform: translateX(0);
-}`, "",{"version":3,"sources":["webpack://./src/sass/abstracts/_placeholders.scss","webpack://./src/sass/index.scss","webpack://./src/sass/base/_base.scss","webpack://./src/sass/abstracts/_constants.scss","webpack://./src/sass/abstracts/_mixins.scss","webpack://./src/sass/base/_buttons.scss","webpack://./src/sass/layouts/_header.scss","webpack://./src/sass/layouts/_promo.scss","webpack://./src/sass/layouts/_about.scss","webpack://./src/sass/layouts/_pets.scss","webpack://./src/sass/layouts/_help.scss","webpack://./src/sass/layouts/_donation.scss","webpack://./src/sass/layouts/_footer.scss","webpack://./src/sass/layouts/_friends.scss","webpack://./src/sass/components/_navigation.scss","webpack://./src/sass/components/_slider.scss","webpack://./src/sass/components/_help-list.scss","webpack://./src/sass/components/_pagination.scss","webpack://./src/sass/components/_burger.scss"],"names":[],"mappings":"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","sourcesContent":["%font-prim {\r\n    font-family: 'Georgia', 'Times New Roman', serif;\r\n}\r\n\r\n%font-add {\r\n    font-family: 'Arial', 'Verdana', sans-serif;\r\n}","//Fonts\r\n@import \"./base/_fonts.css\";\r\n\r\n//Abstracts\r\n@import \"./abstracts/constants\";\r\n@import \"./abstracts/mixins\";\r\n@import \"./abstracts/placeholders\";\r\n\r\n//Base\r\n@import \"./base/base\";\r\n@import \"./base/buttons\";\r\n\r\n//Layouts\r\n@import \"./layouts/header\";\r\n@import \"./layouts/promo\";\r\n@import \"./layouts/about\";\r\n@import \"./layouts/pets\";\r\n@import \"./layouts/help\";\r\n@import \"./layouts/donation\";\r\n@import \"./layouts/footer\";\r\n@import \"./layouts/friends\";\r\n\r\n//Components\r\n@import \"./components/navigation\";\r\n@import \"./components/slider\";\r\n@import \"./components/help-list\";\r\n@import \"./components/pagination\";\r\n@import \"./components/burger\";\r\n\r\n\r\n","html {\r\n    font-size: 10px;\r\n    scroll-behavior: smooth;\r\n}\r\n\r\n* {\r\n    box-sizing: border-box;\r\n}\r\n\r\n.body{\r\n    background: url(../img/backgrounds/noise_transparent@2x.png), radial-gradient(237.5% 111.8% at 0% 0%, #5B483A 0%, #262425 100%), #211F20;\r\n    @extend %font-prim;\r\n    font-size: 1.6rem;\r\n    line-height: 2.6rem;\r\n    font-weight: normal;\r\n    &_light {\r\n        background: $color-light;\r\n    }\r\n}\r\n\r\n.wrapper {\r\n    max-width: 128rem;\r\n    width: 100%;\r\n    margin: auto;\r\n}\r\n\r\nh1 {\r\n    @extend %font-prim;\r\n    color: $color-title;\r\n    @include font($size: 3.5rem, $height: 130%);\r\n    letter-spacing: 0.21rem;\r\n    @include media-mobile {\r\n        font-size: 2.5rem;\r\n        letter-spacing: 0.15rem;\r\n    }\r\n}\r\n\r\n.logo {\r\n    text-decoration: none;\r\n    @include flex($flex-dir: column);\r\n    gap: 1rem;\r\n    &__title {\r\n        margin: 0;\r\n        color: $color-primary;\r\n        @extend %font-prim;\r\n        @include font($size: 3.2rem, $height: 110%);\r\n        letter-spacing: 0.192rem;\r\n        \r\n        .logo_pets & {\r\n            color: $color-title;\r\n        }\r\n    }\r\n    &__text {\r\n        margin: 0;\r\n        color: $color-light;\r\n        @extend %font-add;\r\n        @include font($size: 1.3rem, $height: normal);\r\n        letter-spacing: 0.13rem;\r\n        \r\n        .logo_pets & {\r\n            color: $color-dark;\r\n        }\r\n    }\r\n}\r\n\r\n","$color-primary: #F1CDB3;\r\n$color-active: #FDDCC4;\r\n$color-light: #FFF;\r\n$color-light-add:#F6F6F6;\r\n$color-card: #FAFAFA;\r\n$color-gray: #CDCDCD;\r\n$color-dark:#292929;\r\n$color-title: #545454;\r\n$color-text: #4C4C4C;\r\n$color-copyright: #B2B2B2;\r\n\r\n$content-width: 1280px;\t\r\n$tablet-width: 768px;\t\r\n$mobile-big-width: 568px;\t\r\n$mobile-small-width: 320px;","@mixin flex($i-align: center, $t-align: left, $justify: center, $flex-dir: row, $flex-wrap: nowrap) {\r\n    display: flex;\r\n    align-items: $i-align;\r\n    text-align: $t-align;\r\n    justify-content: $justify;\r\n    flex-direction: $flex-dir;\r\n    flex-wrap: $flex-wrap;\r\n}\r\n\r\n@mixin font ($size, $style:normal, $weight: 400, $height) {\r\n    font-size: $size;\r\n    font-style: $style;\r\n    font-weight: $weight;\r\n    line-height: $height;\r\n}\r\n\r\n@mixin media-laptop {\r\n    @media (max-width: $content-width) { @content; }\r\n}\r\n\r\n@mixin media-tablet {\r\n    @media (max-width: $tablet-width) { @content; }\r\n}\r\n\r\n@mixin media-mobile {\r\n    @media (max-width: $mobile-big-width) { @content; }\r\n}\r\n\r\n@mixin media-mobilesmall {\r\n    @media (max-width: $mobile-small-width) { @content; }\r\n}",".button {\r\n    border-radius: 10rem;\r\n    padding: 1.5rem 4.5rem;\r\n    letter-spacing: 0.102rem;\r\n    border: 2px solid $color-primary;\r\n    cursor: pointer;\r\n    color: $color-dark;\r\n    &_filled {\r\n        background: $color-primary;\r\n    }\r\n    &_empty {\r\n        background-color: $color-card;\r\n    }\r\n    &_circle {\r\n        border: 2px solid $color-primary;\r\n        background-color: $color-light-add;\r\n        height: 3rem;\r\n        padding: 2.3rem;\r\n        background-repeat: no-repeat;\r\n        background-position: center;\r\n    }\r\n    &_left {\r\n        background-image: url(../img/icons/arrow-left.svg);\r\n        @include media-mobile {\r\n            order: 2;\r\n        }\r\n    }\r\n    &_right {\r\n        background-image: url(../img/icons/arrow-right.svg);\r\n        @include media-mobile {\r\n            order: 3;\r\n        }\r\n    }\r\n    &:hover {\r\n        background-color: $color-active;\r\n    }\r\n    &:active {\r\n        background-color: $color-primary;\r\n    }\r\n}",".header {\r\n    @include flex($justify: space-between);\r\n    max-width: 128rem;\r\n    width: 100%;\r\n    padding: 3rem 4rem;\r\n    @include media-tablet {\r\n        padding: 3rem;\r\n    }\r\n    @include media-mobile {\r\n        padding: 3rem 2rem; \r\n    }\r\n}\r\n",".promo {\r\n    &__wrapper {\r\n        @include flex($flex-dir: column);\r\n        gap: 6rem;\r\n        @include media-tablet {\r\n            gap: 3rem;\r\n        }\r\n        @include media-mobile {\r\n            gap: 3rem;\r\n        }\r\n    }\r\n    &__content {\r\n        @include flex($i-align: flex-start);\r\n        height: 72.8rem;\r\n        max-width: 128rem;\r\n        width: 100%;\r\n        padding: 0 4rem;\r\n        gap: 4.2rem;\r\n        @include media-tablet {\r\n            flex-direction: column;\r\n            height: auto;\r\n            align-items: center;\r\n            gap: 10rem;\r\n        }\r\n        @include media-mobile {\r\n            padding: 0 1rem;\r\n            gap: 10.5rem;\r\n        }\r\n    }\r\n    &__filling {\r\n        @include flex($flex-dir: column, $i-align: flex-start, $justify: flex-start);\r\n        padding: 16.3rem 0;\r\n        gap: 4.2rem;\r\n        max-width: 46rem;\r\n        width: 100%;\r\n        @include media-tablet {\r\n            padding: 0;\r\n            :nth-child(3) {\r\n                margin: auto;\r\n            }\r\n        }\r\n        @include media-mobile {\r\n            text-align: center;\r\n        }\r\n    }\r\n    &__title {\r\n        margin: 0;\r\n        color: $color-light;\r\n        @extend %font-prim;\r\n        @include font($size: 4.4rem, $height: 130%);\r\n        @include media-mobile {\r\n            font-size: 2.5rem;\r\n            margin: auto;\r\n            letter-spacing: 0.15rem;\r\n        }\r\n    }\r\n    &__text {\r\n        max-width: 46rem;\r\n        width: 100%;\r\n        margin: 0;\r\n        color: $color-gray;\r\n        @extend %font-add;\r\n        @include font($size: 1.5rem, $height: 160%);\r\n        @include media-mobile {\r\n            \r\n        }\r\n    }\r\n    &__image {\r\n        display: flex;\r\n        @include media-tablet {\r\n            width: 56.9rem;\r\n            height: 59.3rem;\r\n            margin-left: 14rem;\r\n        }\r\n        @include media-mobile {\r\n            width: 26rem;\r\n            height: 27.2rem;\r\n            margin: 0;\r\n            margin-left: 4rem;\r\n        }\r\n    }\r\n}\r\n\r\n\r\n\r\n",".about {\r\n    background-color: $color-light;\r\n    &__wrapper {\r\n        @include flex();\r\n        max-width: 128rem;\r\n        width: 100%;\r\n        padding: 8rem 4rem 9rem 4rem;\r\n        gap: 12rem;\r\n        @include media-tablet {\r\n            flex-direction: column-reverse;\r\n            gap: 8rem;\r\n        }\r\n        @include media-mobile {\r\n            padding: 4.2rem 1rem 3.5rem 1rem;\r\n            gap: 3.5rem;\r\n        }\r\n    }\r\n    &__content {\r\n        @include flex($flex-dir:column);\r\n        gap: 2.5rem;\r\n        max-width: 43rem;\r\n        width: 100%;   \r\n        @include media-mobile {\r\n            text-align: center;\r\n            width: 90%;\r\n        }\r\n    }\r\n    &__title {\r\n       margin: 0;\r\n    }\r\n    &__text {\r\n        margin: 0;\r\n        color: $color-text;\r\n        @extend %font-add;\r\n        @include font($size: 1.5rem, $height: 160%);\r\n        @include media-mobile {\r\n            text-align: justify;\r\n        }\r\n    }\r\n    &__image {\r\n        @include media-mobile {\r\n            width: 26rem;\r\n            height: 35.3rem;\r\n        }\r\n    }\r\n}\r\n\r\n\r\n\r\n",".pets {\r\n    background-color: $color-light-add;\r\n    padding: 8rem 0 10rem 0;\r\n    @include media-mobile {\r\n        padding: 4.2rem 1rem;\r\n    }\r\n    &__wrapper {\r\n        @include flex($flex-dir: column);\r\n        max-width: 128rem;\r\n        width: 100%;;\r\n        gap: 6rem;\r\n        @include media-mobile {\r\n            gap: 4.3rem;\r\n        }\r\n    }\r\n    &__title {\r\n        text-align: center;\r\n        margin: 0;\r\n    }\r\n}",".help {\r\n    background-color: $color-light;\r\n    padding: 8rem 0 8.5rem 0;\r\n    @include media-tablet {\r\n        padding-bottom: 8.8rem;\r\n    }\r\n    @include media-mobile {\r\n        padding: 4.2rem 0;\r\n    }\r\n    &__wrapper {\r\n        @include flex($flex-dir: column);\r\n        gap: 6rem;\r\n        max-width: 128rem;\r\n        width: 100%;\r\n        @include media-mobile {\r\n            gap: 4.2rem;\r\n        }\r\n    }\r\n    &__title {\r\n        margin: 0;\r\n        text-align: center;\r\n    }\r\n}",".donation {\r\n    background-color: $color-light-add;\r\n    padding: 8rem 18.2rem 10rem 18.3rem;\r\n    @include media-mobile {\r\n            padding: 4.2rem 1rem;\r\n    }\r\n    &__wrapper {\r\n        @include flex();\r\n        gap: 3rem;\r\n        max-width: 128rem;\r\n        width: 100%;\r\n        @include media-tablet {\r\n            flex-direction: column-reverse;\r\n            gap: 6rem;\r\n        }\r\n        @include media-mobile {\r\n            gap: 4rem;\r\n        }\r\n    }\r\n    &__title {\r\n        margin: 0;\r\n        max-width: 30rem;\r\n        width: 100%;\r\n        @include media-mobile {\r\n            max-width: 22rem;\r\n            width: 100%;\r\n            margin: auto;\r\n        }\r\n    }\r\n    &__subtitle {\r\n        @include font ($size: 1.5rem, $height: 110%);\r\n        margin: 0;\r\n        color: $color-title;\r\n        letter-spacing: 0.09rem;\r\n        @include media-mobile {\r\n            line-height: 160%;\r\n            letter-spacing: 0;\r\n        }\r\n    }\r\n    &__content {\r\n        @include flex($flex-dir: column, $i-align: left);\r\n        gap: 2rem;\r\n        margin: 0;\r\n        max-width: 38rem;\r\n        width: 100%;\r\n        @include media-mobile {\r\n            width: 95%;\r\n            text-align: center;\r\n        }\r\n    }\r\n    &__card {\r\n        background-color: $color-primary;\r\n        margin: 0;\r\n        border-radius: 1rem;\r\n        @include flex();\r\n        gap: 1rem;\r\n        @include font ($size: 2rem, $height: 115%);\r\n        color: $color-title;\r\n        letter-spacing: 0.12rem;\r\n        width: 35rem;\r\n        height: 4.3rem;\r\n        @include media-mobile {\r\n            font-size: 1.5rem;\r\n            width: 28rem;\r\n            margin: auto;\r\n        }\r\n    }\r\n    &__copyright {\r\n        margin: 0;\r\n        @extend %font-add;\r\n        color: $color-copyright;\r\n        @include font ($size: 1.2rem, $style: italic, $height: 150%);\r\n        @include media-mobile {\r\n            text-align: justify;\r\n        }\r\n    }\r\n    &__image {\r\n        @include media-mobile {\r\n            width: 26rem;\r\n            height: 13.5rem;\r\n        }\r\n    }\r\n}",".footer {\r\n    background: url(../img/backgrounds/noise_transparent@2x.png), radial-gradient(237.5% 111.8% at 0% 0%, #5B483A 0%, #262425 100%), #211F20;\r\n    &__wrapper {\r\n        @include flex($justify: space-between);\r\n        max-width: 128rem;\r\n        width: 94%;\r\n        @include media-tablet {\r\n            padding-top: 3rem;\r\n            flex-wrap: wrap;\r\n            justify-content: center;\r\n            column-gap: 6rem;\r\n            row-gap: 2.5rem;\r\n        }\r\n        @include media-mobile {\r\n            row-gap: 4rem;\r\n        }\r\n    }\r\n    &__contacts {\r\n        @include flex($flex-dir: column, $i-align: flex-start);\r\n        max-width: 27.8rem;\r\n        width: 100%;\r\n        gap: 4rem;\r\n        @include media-mobile {\r\n           align-items: center;\r\n        }\r\n    }\r\n    &__location {\r\n        @include flex($flex-dir: column, $i-align: flex-start);\r\n        max-width: 30.2rem;\r\n        width: 100%;\r\n        gap: 3.3rem;\r\n        @include media-mobile {\r\n            gap: 4rem;\r\n        }\r\n    }\r\n    &__title {\r\n        @include font($size: 3.5rem, $height: 130%);\r\n        margin: 0;\r\n        color: $color-light;\r\n        letter-spacing: 0.21rem; \r\n        @include media-mobile {\r\n            letter-spacing: 0.15rem;\r\n            font-size: 2.5rem;\r\n            text-align: center;\r\n            max-width: 30rem;\r\n            width: 90%;\r\n            margin: auto;\r\n        }\r\n    }\r\n    &__contact {\r\n        @include flex($justify: flex-start);\r\n        gap: 2rem;\r\n        @include font($size: 2rem, $height: 115%);\r\n        color: $color-primary;\r\n        letter-spacing: 0.12rem; \r\n        \r\n    }\r\n    &__data {\r\n        @include font($size: 2rem, $height: 115%);\r\n        color: $color-primary;\r\n        letter-spacing: 0.12rem;\r\n        text-decoration: none;\r\n    }\r\n    &__icon {\r\n        &_mail, &_phone {\r\n            width: 4rem;\r\n            height: 3.2rem;\r\n        }\r\n        &_loc {\r\n            width: 2.2rem;\r\n            height: 3.2rem;\r\n        }\r\n    }\r\n    &__image {\r\n        padding-top: 4rem;\r\n        @include media-mobile {\r\n            width: 26rem;\r\n            padding-top: 0;\r\n        }\r\n    }\r\n}",".friends {\r\n    background-color: $color-light-add;\r\n    @include flex($t-align: center, $flex-dir: column);\r\n    gap: 6rem;\r\n    padding: 8rem 4rem 10rem 4rem;\r\n    &__title {\r\n        max-width: 40rem;\r\n        margin: 0;\r\n    }\r\n    @include media-tablet {\r\n        gap: 2rem;\r\n        padding: 8rem 4rem 4.5rem 4rem;\r\n    }\r\n    @include media-mobile {\r\n        gap: 1rem;\r\n        padding: 4rem 2rem 1.5rem 2rem;\r\n    }\r\n}",".navigation {\r\n    margin: 0;\r\n    list-style-type: none;\r\n    @include flex();\r\n    gap: 3.5rem;\r\n    &__link {\r\n        margin: 0;\r\n        @include font($size: 1.5rem, $height: 160%);\r\n        @extend %font-add;\r\n        color: $color-gray;\r\n        text-decoration: none;\r\n        cursor: pointer;\r\n        &:hover {\r\n            color: $color-light;\r\n            text-decoration: underline $color-primary 0.3rem;\r\n            text-underline-offset: 1rem;\r\n            transition: all .3s ease-out;\r\n        }\r\n        @include media-mobile {\r\n            @include font($size: 3.2rem, $height: 160%);\r\n            &:active {\r\n                color: $color-light;\r\n                text-decoration: underline $color-primary 0.3rem;\r\n                text-underline-offset: 1rem;\r\n                transition: all .3s ease-out;\r\n            }\r\n        }\r\n        \r\n        .navigation_pets & {\r\n            color: $color-title;\r\n            &:hover {\r\n                color: $color-dark;\r\n            }\r\n        }\r\n    }\r\n    @include media-mobile {\r\n        @include flex($flex-dir:column);\r\n        top: 0;\r\n        right: 0;\r\n        position: absolute;\r\n        padding: 4.2rem 0;\r\n        margin: 0;\r\n        background: $color-dark;\r\n        list-style-type: none;\r\n        transform: translateX(-180%);\r\n        height: 82.3rem;\r\n        max-width: 32rem;\r\n        width: 100%;\r\n    }  \r\n}",".slider {\r\n    @include flex($justify:space-between);\r\n    max-width: 128rem;\r\n    width: 94%;\r\n    @include media-tablet {\r\n        width: 92%;\r\n    }\r\n    @include media-mobile {\r\n        flex-wrap: wrap;\r\n        row-gap: 2rem;\r\n        justify-content: space-around;\r\n    }\r\n    &__wrapper {\r\n        @include flex();\r\n        gap: 9rem;\r\n        max-width: 128rem;\r\n        width: 100%;\r\n        @include media-tablet {\r\n            gap: 4rem;\r\n            .card:nth-child(n + 3) {\r\n                display: none;\r\n            }\r\n        }\r\n        @include media-mobile {\r\n            .card:nth-child(n + 2) {\r\n                display: none;\r\n            } \r\n        }\r\n    }\r\n}\r\n\r\n.card {\r\n    @include flex($flex-dir: column);\r\n    background-color: $color-card;\r\n    border-radius: 1rem;\r\n    width: 27rem;\r\n    height: 43.5rem;\r\n    gap: 1rem;\r\n    padding-bottom: 2.5rem;\r\n    &__name {\r\n        color: $color-title;\r\n        @include font($size: 2rem, $height: normal);\r\n        letter-spacing: 0.102rem;\r\n    }\r\n}\r\n\r\n.slider-friends {\r\n    @include flex($flex-wrap: wrap);\r\n    max-width: 128rem;\r\n    width: 100%;\r\n    gap: 4.5rem;\r\n    &__wrapper {\r\n        @include flex($flex-wrap: wrap);\r\n        gap: 3rem 4rem;\r\n        @include media-tablet {\r\n            resize: 1rem;\r\n            .card:nth-child(n + 7) {\r\n                display: none;\r\n            }\r\n        }\r\n        @include media-mobile {\r\n            .card:nth-child(n + 4) {\r\n                display: none;\r\n            } \r\n        }\r\n    }\r\n}",".help-list {\r\n    @include flex($flex-wrap: wrap);\r\n    max-width: 128rem;\r\n    width: 93%;\r\n    row-gap: 4rem;\r\n    column-gap: 11.8rem;\r\n    @include media-tablet {\r\n        gap: 5rem;\r\n    }\r\n    @include media-mobile {\r\n        gap: 3rem;\r\n    }\r\n    &__content {\r\n        @include flex($flex-dir: column);\r\n        @include font($size: 2rem, $height: 115%);\r\n        gap: 0.5rem;\r\n        color: $color-title;\r\n        letter-spacing: 0.12rem;\r\n        @include media-tablet {\r\n            width: 18rem;\r\n            height: 12rem;\r\n            gap: 1rem;\r\n        }\r\n        @include media-mobile {\r\n            font-size: 1.5rem;\r\n            gap: 2rem;\r\n            width: 13rem;\r\n            height: auto;\r\n        }\r\n    }\r\n    &__image {\r\n        @include media-mobile {\r\n            width: 5rem;\r\n            height: 5rem;\r\n        }\r\n    }\r\n    &__text {\r\n        margin: 0;\r\n    }\r\n}",".pagination {\r\n    @include flex();\r\n    gap: 2rem;\r\n    &__btn {\r\n        border-radius: 100%;\r\n        border: 2px solid $color-primary;\r\n        background-color: $color-light-add;\r\n        width: 5.2rem;\r\n        height: 5.2rem;\r\n        padding: 1.4rem 0 1.5rem 0;  \r\n        cursor: pointer;\r\n        color: $color-dark;\r\n        &_disabled {\r\n            border: 2px solid $color-gray;\r\n        }\r\n        &_fill {\r\n            background-color: $color-primary;\r\n        }\r\n        &:hover:not(:disabled) {\r\n            background-color: $color-active;\r\n        }\r\n        &:active:not(:disabled) {\r\n            background-color: $color-primary;\r\n        }\r\n    }  \r\n    @include media-tablet {\r\n        padding: 3rem;\r\n    }\r\n    @include media-mobile {\r\n        gap: 1rem;\r\n    }\r\n}",".burger-checkbox {\r\n    position: absolute;\r\n    visibility: hidden;\r\n  }\r\n  .burger {\r\n    position: relative;\r\n    z-index: 1;\r\n    display: none;\r\n    position: relative;\r\n    border: none;\r\n    background: transparent;\r\n    width: 40px;\r\n    height: 26px;\r\n    @include media-mobile {\r\n        display: block;\r\n    }\r\n  }\r\n  .burger::before,\r\n  .burger::after {\r\n    content: '';\r\n    left: 0;\r\n    position: absolute;\r\n    display: block;\r\n    width: 100%;\r\n    height: 4px;\r\n    border-radius: 10px;\r\n    background: $color-primary;\r\n  }\r\n  .burger::before {\r\n    top: 0;\r\n    box-shadow: 0 11px 0 $color-primary;\r\n    transition: box-shadow .3s .15s, top .3s .15s, transform .3s;\r\n  }\r\n  .burger::after {\r\n    bottom: 0;\r\n    transition: bottom .3s .15s, transform .3s;\r\n  }\r\n  .burger-checkbox:checked + .burger::before {\r\n    top: 11px;\r\n    transform: rotate(45deg);\r\n    box-shadow: 0 6px 0 rgba(0,0,0,0);\r\n    transition: box-shadow .15s, top .3s, transform .3s .15s;\r\n  }\r\n  .burger-checkbox:checked + .burger::after {\r\n    bottom: 11px;\r\n    transform: rotate(-45deg);\r\n    transition: bottom .3s, transform .3s .15s;\r\n  }\r\n  .burger-checkbox:checked ~ .navigation {\r\n    transform: translateX(0);\r\n  }\r\n \r\n  \r\n\r\n"],"sourceRoot":""}]);
+}`, "",{"version":3,"sources":["webpack://./src/sass/abstracts/_placeholders.scss","webpack://./src/sass/index.scss","webpack://./src/sass/base/_base.scss","webpack://./src/sass/abstracts/_constants.scss","webpack://./src/sass/abstracts/_mixins.scss","webpack://./src/sass/base/_buttons.scss","webpack://./src/sass/layouts/_header.scss","webpack://./src/sass/layouts/_promo.scss","webpack://./src/sass/layouts/_about.scss","webpack://./src/sass/layouts/_pets.scss","webpack://./src/sass/layouts/_help.scss","webpack://./src/sass/layouts/_donation.scss","webpack://./src/sass/layouts/_footer.scss","webpack://./src/sass/layouts/_friends.scss","webpack://./src/sass/components/_navigation.scss","webpack://./src/sass/components/_slider.scss","webpack://./src/sass/components/_help-list.scss","webpack://./src/sass/components/_pagination.scss","webpack://./src/sass/components/_burger.scss"],"names":[],"mappings":"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","sourcesContent":["%font-prim {\r\n    font-family: 'Georgia', 'Times New Roman', serif;\r\n}\r\n\r\n%font-add {\r\n    font-family: 'Arial', 'Verdana', sans-serif;\r\n}","//Fonts\r\n@import \"./base/_fonts.css\";\r\n\r\n//Abstracts\r\n@import \"./abstracts/constants\";\r\n@import \"./abstracts/mixins\";\r\n@import \"./abstracts/placeholders\";\r\n\r\n//Base\r\n@import \"./base/base\";\r\n@import \"./base/buttons\";\r\n\r\n//Layouts\r\n@import \"./layouts/header\";\r\n@import \"./layouts/promo\";\r\n@import \"./layouts/about\";\r\n@import \"./layouts/pets\";\r\n@import \"./layouts/help\";\r\n@import \"./layouts/donation\";\r\n@import \"./layouts/footer\";\r\n@import \"./layouts/friends\";\r\n\r\n//Components\r\n@import \"./components/navigation\";\r\n@import \"./components/slider\";\r\n@import \"./components/help-list\";\r\n@import \"./components/pagination\";\r\n@import \"./components/burger\";\r\n\r\n\r\n","* {\r\n    box-sizing: border-box;\r\n}\r\n\r\nhtml {\r\n    font-size: 10px;\r\n    scroll-behavior: smooth;\r\n    @media screen and (min-width: $mobile-small-width) {\r\n        &::-webkit-scrollbar {\r\n          width: 0.5rem;\r\n        }\r\n        &::-webkit-scrollbar-thumb {\r\n          background-color: $color-light;\r\n          border-radius: 1rem;\r\n        }\r\n      }\r\n}\r\n\r\n.body{\r\n    background: url(../img/backgrounds/noise_transparent@2x.png), radial-gradient(237.5% 111.8% at 0% 0%, #5B483A 0%, #262425 100%), #211F20;\r\n    @extend %font-prim;\r\n    font-size: 1.6rem;\r\n    line-height: 2.6rem;\r\n    font-weight: normal;\r\n    &_light {\r\n        background: $color-light;\r\n    }\r\n}\r\n\r\n.wrapper {\r\n    max-width: 128rem;\r\n    width: 100%;\r\n    margin: auto;\r\n}\r\n\r\nh1 {\r\n    @extend %font-prim;\r\n    color: $color-title;\r\n    @include font($size: 3.5rem, $height: 130%);\r\n    letter-spacing: 0.21rem;\r\n    @include media-mobile {\r\n        font-size: 2.5rem;\r\n        letter-spacing: 0.15rem;\r\n    }\r\n}\r\n\r\n.logo {\r\n    text-decoration: none;\r\n    @include flex($flex-dir: column);\r\n    gap: 1rem;\r\n    &__title {\r\n        margin: 0;\r\n        color: $color-primary;\r\n        @extend %font-prim;\r\n        @include font($size: 3.2rem, $height: 110%);\r\n        letter-spacing: 0.192rem;\r\n        \r\n        .logo_pets & {\r\n            color: $color-title;\r\n        }\r\n    }\r\n    &__text {\r\n        margin: 0;\r\n        color: $color-light;\r\n        @extend %font-add;\r\n        @include font($size: 1.3rem, $height: normal);\r\n        letter-spacing: 0.13rem;\r\n        \r\n        .logo_pets & {\r\n            color: $color-dark;\r\n        }\r\n    }\r\n}\r\n\r\n","$color-primary: #F1CDB3;\r\n$color-active: #FDDCC4;\r\n$color-light: #FFF;\r\n$color-light-add:#F6F6F6;\r\n$color-card: #FAFAFA;\r\n$color-gray: #CDCDCD;\r\n$color-dark:#292929;\r\n$color-title: #545454;\r\n$color-text: #4C4C4C;\r\n$color-copyright: #B2B2B2;\r\n\r\n$content-width: 1280px;\t\r\n$tablet-width: 768px;\t\r\n$mobile-big-width: 576px;\t\r\n$mobile-small-width: 320px;","@mixin flex($i-align: center, $t-align: left, $justify: center, $flex-dir: row, $flex-wrap: nowrap) {\r\n    display: flex;\r\n    align-items: $i-align;\r\n    text-align: $t-align;\r\n    justify-content: $justify;\r\n    flex-direction: $flex-dir;\r\n    flex-wrap: $flex-wrap;\r\n}\r\n\r\n@mixin font ($size, $style:normal, $weight: 400, $height) {\r\n    font-size: $size;\r\n    font-style: $style;\r\n    font-weight: $weight;\r\n    line-height: $height;\r\n}\r\n\r\n@mixin media-laptop {\r\n    @media (max-width: $content-width) { @content; }\r\n}\r\n\r\n@mixin media-tablet {\r\n    @media (max-width: $tablet-width) { @content; }\r\n}\r\n\r\n@mixin media-mobile {\r\n    @media (max-width: $mobile-big-width) { @content; }\r\n}\r\n\r\n@mixin media-mobilesmall {\r\n    @media (max-width: $mobile-small-width) { @content; }\r\n}",".button {\r\n    border-radius: 10rem;\r\n    padding: 1.5rem 4.5rem;\r\n    letter-spacing: 1.3px;\r\n    border: 2px solid $color-primary;\r\n    cursor: pointer;\r\n    color: $color-dark;\r\n    &_filled {\r\n        background: $color-primary;\r\n    }\r\n    &_empty {\r\n        background-color: $color-card;\r\n    }\r\n    &_circle {\r\n        border: 2px solid $color-primary;\r\n        background-color: $color-light-add;\r\n        height: 3rem;\r\n        padding: 2.3rem;\r\n        background-repeat: no-repeat;\r\n        background-position: center;\r\n    }\r\n    &_left {\r\n        background-image: url(../img/icons/arrow-left.svg);\r\n        @include media-mobile {\r\n            order: 2;\r\n        }\r\n    }\r\n    &_right {\r\n        background-image: url(../img/icons/arrow-right.svg);\r\n        @include media-mobile {\r\n            order: 3;\r\n        }\r\n    }\r\n    &:hover {\r\n        background-color: $color-active;\r\n    }\r\n    &:active {\r\n        background-color: $color-primary;\r\n    }\r\n}",".header {\r\n    @include flex($justify: space-between);\r\n    max-width: 128rem;\r\n    width: 100%;\r\n    padding: 3rem 4rem;\r\n    @include media-tablet {\r\n        padding: 3rem;\r\n    }\r\n    @include media-mobile {\r\n        padding: 3rem 2rem; \r\n    }\r\n}\r\n",".promo {\r\n    &__wrapper {\r\n        @include flex($flex-dir: column);\r\n        gap: 6rem;\r\n        @include media-tablet {\r\n            gap: 3rem;\r\n        }\r\n        @include media-mobile {\r\n            gap: 3rem;\r\n        }\r\n    }\r\n    &__content {\r\n        @include flex($i-align: flex-start);\r\n        height: 72.8rem;\r\n        max-width: 128rem;\r\n        width: 100%;\r\n        padding: 0 4rem;\r\n        gap: 4.2rem;\r\n        @media (max-width: 990px) {\r\n            flex-direction: column;\r\n            height: auto;\r\n            align-items: center;\r\n            gap: 5rem;\r\n        }\r\n        @include media-tablet {\r\n            flex-direction: column;\r\n            height: auto;\r\n            align-items: center;\r\n            gap: 10rem;\r\n        }\r\n        @include media-mobile {\r\n            padding: 0 1rem;\r\n            gap: 10.5rem;\r\n        }\r\n    }\r\n    &__filling {\r\n        @include flex($flex-dir: column, $i-align: flex-start, $justify: flex-start);\r\n        padding: 16.3rem 0;\r\n        gap: 4.2rem;\r\n        max-width: 46rem;\r\n        width: 100%;\r\n        @media (max-width: 990px) {\r\n          padding: 1rem;\r\n        }\r\n        @include media-tablet {\r\n            padding: 0;\r\n            :nth-child(3) {\r\n                margin: auto;\r\n            }\r\n        }\r\n        @include media-mobile {\r\n            text-align: center;\r\n        }\r\n    }\r\n    &__title {\r\n        margin: 0;\r\n        color: $color-light;\r\n        @extend %font-prim;\r\n        @include font($size: 4.4rem, $height: 130%);\r\n        @include media-mobile {\r\n            font-size: 2.5rem;\r\n            margin: auto;\r\n            letter-spacing: 0.15rem;\r\n        }\r\n    }\r\n    &__text {\r\n        max-width: 46rem;\r\n        width: 100%;\r\n        margin: 0;\r\n        color: $color-gray;\r\n        @extend %font-add;\r\n        @include font($size: 1.5rem, $height: 160%);\r\n        @include media-mobile {\r\n            \r\n        }\r\n    }\r\n    &__image {\r\n        display: flex;\r\n        @media (max-width: 990px) {\r\n            width: 56.9rem;\r\n            height: 59.3rem;\r\n            margin-left: 14rem;\r\n        }\r\n        @include media-tablet {\r\n            width: 56.9rem;\r\n            height: 59.3rem;\r\n            margin-left: 14rem;\r\n        }\r\n        @media (max-width: 715px) {\r\n            width: 40rem;\r\n            height: auto;\r\n            margin-left: 4rem;\r\n        }\r\n        @include media-mobile {\r\n            width: 26rem;\r\n            height: 27.2rem;\r\n            margin: 0;\r\n            margin-left: 4rem;\r\n        }\r\n    }\r\n}\r\n\r\n\r\n\r\n",".about {\r\n    background-color: $color-light;\r\n    &__wrapper {\r\n        @include flex();\r\n        max-width: 128rem;\r\n        width: 100%;\r\n        padding: 8rem 4rem 9rem 4rem;\r\n        gap: 12rem;\r\n        @include media-tablet {\r\n            flex-direction: column-reverse;\r\n            gap: 8rem;\r\n        }\r\n        @include media-mobile {\r\n            padding: 4.2rem 1rem 3.5rem 1rem;\r\n            gap: 3.5rem;\r\n        }\r\n    }\r\n    &__content {\r\n        @include flex($flex-dir:column, $i-align: flex-start);\r\n        gap: 2.5rem;\r\n        max-width: 43rem;\r\n        width: 100%;   \r\n        @include media-mobile {\r\n            text-align: center;\r\n            width: 90%;\r\n        }\r\n    }\r\n    &__title {\r\n       margin: 0;\r\n    }\r\n    &__text {\r\n        margin: 0;\r\n        color: $color-text;\r\n        @extend %font-add;\r\n        @include font($size: 1.5rem, $height: 160%);\r\n        @include media-mobile {\r\n            text-align: justify;\r\n        }\r\n    }\r\n    &__image {\r\n        @include media-mobile {\r\n            width: 26rem;\r\n            height: 35.3rem;\r\n        }\r\n    }\r\n}\r\n\r\n\r\n\r\n",".pets {\r\n    background-color: $color-light-add;\r\n    padding: 8rem 0 10rem 0;\r\n    @include media-mobile {\r\n        padding: 4.2rem 1rem;\r\n    }\r\n    &__wrapper {\r\n        @include flex($flex-dir: column);\r\n        max-width: 128rem;\r\n        width: 100%;;\r\n        gap: 6rem;\r\n        @include media-mobile {\r\n            gap: 4.3rem;\r\n        }\r\n    }\r\n    &__title {\r\n        text-align: center;\r\n        margin: 0;\r\n    }\r\n}",".help {\r\n    background-color: $color-light;\r\n    padding: 8rem 0 10rem 0;\r\n    @include media-tablet {\r\n        padding-bottom: 8.8rem;\r\n    }\r\n    @include media-mobile {\r\n        padding: 4.2rem 0;\r\n    }\r\n    &__wrapper {\r\n        @include flex($flex-dir: column);\r\n        gap: 6rem;\r\n        max-width: 128rem;\r\n        width: 100%;\r\n        @include media-tablet {\r\n            gap: 6rem;\r\n        }\r\n        @include media-mobile {\r\n            gap: 4.2rem;\r\n        }\r\n    }\r\n    &__title {\r\n        margin: 0;\r\n        text-align: center;\r\n    }\r\n}",".donation {\r\n    background-color: $color-light-add;\r\n    padding: 8rem 18.2rem 10rem 18.3rem;\r\n    @include media-mobile {\r\n        padding: 4.2rem 1rem;\r\n    }\r\n    @media (max-width: 715px) {\r\n        padding: 5rem;\r\n      }\r\n      @include media-mobile {\r\n        padding: 4.2rem 1rem\r\n      }\r\n    &__wrapper {\r\n        @include flex();\r\n        gap: 3rem;\r\n        max-width: 128rem;\r\n        width: 100%;\r\n        @media (max-width: 990px) {\r\n            flex-direction: column;\r\n          }\r\n        @include media-tablet {\r\n            flex-direction: column-reverse;\r\n            gap: 6rem;\r\n        }\r\n        @include media-mobile {\r\n            gap: 4rem;\r\n        }\r\n    }\r\n    &__title {\r\n        margin: 0;\r\n        max-width: 30rem;\r\n        width: 100%;\r\n        @include media-mobile {\r\n            max-width: 22rem;\r\n            width: 100%;\r\n            margin: auto;\r\n        }\r\n    }\r\n    &__subtitle {\r\n        @include font ($size: 1.5rem, $height: 110%);\r\n        margin: 0;\r\n        color: $color-title;\r\n        letter-spacing: 0.09rem;\r\n        @include media-mobile {\r\n            line-height: 160%;\r\n            letter-spacing: 0;\r\n        }\r\n    }\r\n    &__content {\r\n        @include flex($flex-dir: column, $i-align: left);\r\n        gap: 2rem;\r\n        margin: 0;\r\n        max-width: 38rem;\r\n        width: 100%;\r\n        @include media-mobile {\r\n            width: 95%;\r\n            text-align: center;\r\n        }\r\n    }\r\n    &__card {\r\n        background-color: $color-primary;\r\n        margin: 0;\r\n        border-radius: 1rem;\r\n        @include flex();\r\n        gap: 1rem;\r\n        @include font ($size: 2rem, $height: 115%);\r\n        color: $color-title;\r\n        letter-spacing: 0.12rem;\r\n        width: 35rem;\r\n        height: 4.3rem;\r\n        @include media-mobile {\r\n            font-size: 1.5rem;\r\n            width: 28rem;\r\n            margin: auto;\r\n        }\r\n    }\r\n    &__copyright {\r\n        margin: 0;\r\n        @extend %font-add;\r\n        color: $color-copyright;\r\n        @include font ($size: 1.2rem, $style: italic, $height: 150%);\r\n        @include media-mobile {\r\n            text-align: justify;\r\n        }\r\n    }\r\n    &__image {\r\n        @include media-mobile {\r\n            width: 26rem;\r\n            height: 13.5rem;\r\n        }\r\n    }\r\n}",".footer {\r\n    background: url(../img/backgrounds/noise_transparent@2x.png), radial-gradient(237.5% 111.8% at 0% 0%, #5B483A 0%, #262425 100%), #211F20;\r\n    &__wrapper {\r\n        @include flex($justify: space-between);\r\n        max-width: 128rem;\r\n        width: 94%;\r\n        @media (max-width: 990px) {\r\n            flex-wrap: wrap;\r\n            justify-content: center;\r\n            gap: 6rem;\r\n            padding-top: 5rem;\r\n        }\r\n        @include media-tablet {\r\n            padding-top: 3rem;\r\n            flex-wrap: wrap;\r\n            justify-content: center;\r\n            column-gap: 6rem;\r\n            row-gap: 2.5rem;\r\n        }\r\n        @include media-mobile {\r\n            row-gap: 4rem;\r\n        }\r\n    }\r\n    &__contacts {\r\n        @include flex($flex-dir: column, $i-align: flex-start);\r\n        max-width: 27.8rem;\r\n        width: 100%;\r\n        gap: 4rem;\r\n        @include media-mobile {\r\n           align-items: center;\r\n        }\r\n    }\r\n    &__location {\r\n        @include flex($flex-dir: column, $i-align: flex-start);\r\n        max-width: 30.2rem;\r\n        width: 100%;\r\n        gap: 3.3rem;\r\n        @include media-mobile {\r\n            gap: 4rem;\r\n        }\r\n    }\r\n    &__title {\r\n        @include font($size: 3.5rem, $height: 130%);\r\n        margin: 0;\r\n        color: $color-light;\r\n        letter-spacing: 0.21rem; \r\n        @include media-mobile {\r\n            letter-spacing: 0.15rem;\r\n            font-size: 2.5rem;\r\n            text-align: center;\r\n            max-width: 30rem;\r\n            width: 90%;\r\n            margin: auto;\r\n        }\r\n    }\r\n    &__contact {\r\n        @include flex($justify: flex-start);\r\n        gap: 2rem;\r\n        @include font($size: 2rem, $height: 115%);\r\n        color: $color-primary;\r\n        letter-spacing: 0.12rem; \r\n        \r\n    }\r\n    &__data {\r\n        @include font($size: 2rem, $height: 115%);\r\n        color: $color-primary;\r\n        letter-spacing: 0.12rem;\r\n        text-decoration: none;\r\n    }\r\n    &__icon {\r\n        &_mail, &_phone {\r\n            width: 4rem;\r\n            height: 3.2rem;\r\n        }\r\n        &_loc {\r\n            width: 2.2rem;\r\n            height: 3.2rem;\r\n        }\r\n    }\r\n    &__image {\r\n        padding-top: 4rem;\r\n        @include media-mobile {\r\n            width: 26rem;\r\n            padding-top: 0;\r\n        }\r\n    }\r\n}",".friends {\r\n    background-color: $color-light-add;\r\n    @include flex($t-align: center, $flex-dir: column);\r\n    gap: 6rem;\r\n    padding: 8rem 4rem 10rem 4rem;\r\n    &__title {\r\n        max-width: 40rem;\r\n        margin: 0;\r\n    }\r\n    @include media-tablet {\r\n        gap: 2rem;\r\n        padding: 8rem 4rem 4.5rem 4rem;\r\n    }\r\n    @include media-mobile {\r\n        gap: 1rem;\r\n        padding: 4rem 2rem 1.5rem 2rem;\r\n    }\r\n}",".navigation {\r\n    padding: 0;\r\n    margin: 0;\r\n    list-style-type: none;\r\n    @include flex();\r\n    gap: 3.45rem;\r\n    &__link {\r\n        margin: 0;\r\n        padding: 0;\r\n        @include font($size: 1.5rem, $height: 160%);\r\n        @extend %font-add;\r\n        color: $color-gray;\r\n        text-decoration: none;\r\n        cursor: pointer;\r\n        &:hover {\r\n            color: $color-light;\r\n            text-decoration: underline $color-primary 0.3rem;\r\n            text-underline-offset: 1rem;\r\n            transition: all .3s ease-out;\r\n        }\r\n        @include media-mobile {\r\n            @include font($size: 3.2rem, $height: 160%);\r\n            &:active {\r\n                color: $color-light;\r\n                text-decoration: underline $color-primary 0.3rem;\r\n                text-underline-offset: 1rem;\r\n                transition: all .3s ease-out;\r\n            }\r\n        }\r\n        .navigation_pets & {\r\n            color: $color-title;\r\n            @media (max-width: 731px){\r\n                color: $color-gray;\r\n                &:hover {\r\n                    color: $color-light;\r\n                }\r\n            }\r\n        }\r\n    }\r\n    @media (max-width: 731px) {\r\n        @include flex($flex-dir:column);\r\n        top: 0;\r\n        right: 0;\r\n        position: absolute;\r\n        padding: 4.2rem 0;\r\n        margin: 0;\r\n        background: $color-dark;\r\n        list-style-type: none;\r\n        transform: translateX(-250%);\r\n        height: 82.3rem;\r\n        max-width: 32rem;\r\n        width: 100%;\r\n    }  \r\n}",".slider {\r\n    @include flex($justify:space-between);\r\n    max-width: 128rem;\r\n    width: 94%;\r\n    @include media-tablet {\r\n        width: 92%;\r\n    }\r\n    @include media-mobile {\r\n        flex-wrap: wrap;\r\n        row-gap: 2rem;\r\n        justify-content: space-around;\r\n    }\r\n    &__wrapper {\r\n        @include flex();\r\n        gap: 9rem;\r\n        max-width: 128rem;\r\n        width: 100%;\r\n        @media (max-width: 1126px) {\r\n            gap: 6rem;\r\n            .card:nth-child(n + 3) {\r\n                display: none;\r\n            }\r\n        }\r\n        @media (max-width: 715px) {\r\n            .card:nth-child(n + 2) {\r\n                display: none;\r\n            }\r\n        }\r\n        @include media-tablet {\r\n            gap: 4rem;\r\n            .card:nth-child(n + 3) {\r\n                display: none;\r\n            }\r\n        }\r\n        @include media-mobile {\r\n            .card:nth-child(n + 2) {\r\n                display: none;\r\n            } \r\n        }\r\n    }\r\n}\r\n\r\n.card {\r\n    @include flex($flex-dir: column);\r\n    background-color: $color-card;\r\n    border-radius: 1rem;\r\n    width: 27rem;\r\n    height: 43.5rem;\r\n    gap: 1rem;\r\n    padding-bottom: 2.5rem;\r\n    &__name {\r\n        color: $color-title;\r\n        @include font($size: 2rem, $height: normal);\r\n        letter-spacing: 0.102rem;\r\n    }\r\n}\r\n\r\n.slider-friends {\r\n    @include flex($flex-wrap: wrap);\r\n    max-width: 128rem;\r\n    width: 100%;\r\n    gap: 4.5rem;\r\n    &__wrapper {\r\n        @include flex($flex-wrap: wrap);\r\n        gap: 3rem 3.8rem;\r\n        @include media-tablet {\r\n            resize: 1rem;\r\n            .card:nth-child(n + 7) {\r\n                display: none;\r\n            }\r\n        }\r\n        @include media-mobile {\r\n            .card:nth-child(n + 4) {\r\n                display: none;\r\n            } \r\n        }\r\n    }\r\n}",".help-list {\r\n    @include flex($flex-wrap: wrap);\r\n    max-width: 128rem;\r\n    width: 93%;\r\n    row-gap: 5.5rem;\r\n    column-gap: 11.8rem;\r\n    @include media-tablet {\r\n        gap: 5rem 5.5rem;\r\n    }\r\n    @include media-mobile {\r\n        gap: 3rem;\r\n    }\r\n    &__content {\r\n        @include flex($flex-dir: column);\r\n        @include font($size: 2rem, $height: 115%);\r\n        gap: 3rem;\r\n        color: $color-title;\r\n        letter-spacing: 0.12rem;\r\n        @include media-tablet {\r\n            width: 18rem;\r\n            height: 12rem;\r\n            gap: 3rem;\r\n        }\r\n        @include media-mobile {\r\n            font-size: 1.5rem;\r\n            gap: 2rem;\r\n            width: 13rem;\r\n            height: auto;\r\n        }\r\n    }\r\n    &__image {\r\n        @include media-mobile {\r\n            width: 5rem;\r\n            height: 5rem;\r\n        }\r\n    }\r\n    &__text {\r\n        margin: 0;\r\n    }\r\n}",".pagination {\r\n    @include flex();\r\n    gap: 2rem;\r\n    &__btn {\r\n        border-radius: 100%;\r\n        border: 2px solid $color-primary;\r\n        background-color: $color-light-add;\r\n        width: 5.2rem;\r\n        height: 5.2rem;\r\n        padding: 1.4rem 0 1.5rem 0;  \r\n        cursor: pointer;\r\n        color: $color-dark;\r\n        &_disabled {\r\n            border: 2px solid $color-gray;\r\n            color: $color-gray;\r\n            cursor: not-allowed;\r\n        }\r\n        &_fill {\r\n            background-color: $color-primary;\r\n        }\r\n        &:hover:not(:disabled) {\r\n            background-color: $color-active;\r\n        }\r\n        &:active:not(:disabled) {\r\n            background-color: $color-primary;\r\n        }\r\n    }  \r\n    @include media-tablet {\r\n        padding: 3rem;\r\n    }\r\n    @include media-mobile {\r\n        gap: 1rem;\r\n    }\r\n}",".burger-checkbox {\r\n    position: absolute;\r\n    visibility: hidden;\r\n  }\r\n  .burger {\r\n    position: relative;\r\n    z-index: 1;\r\n    display: none;\r\n    position: relative;\r\n    border: none;\r\n    background: transparent;\r\n    width: 30px;\r\n    height: 24px;\r\n    @media (max-width: 731px) {\r\n        display: block;\r\n    }\r\n  }\r\n\r\n  .burger::before,\r\n  .burger::after {\r\n    content: '';\r\n    left: 0;\r\n    position: absolute;\r\n    display: block;\r\n    width: 100%;\r\n    height: 2px;\r\n    background: $color-primary;\r\n    border-radius: 5rem;\r\n  }\r\n  .burger::before {\r\n    top: 0;\r\n    box-shadow: 0 11px 0 $color-primary;\r\n    transition: box-shadow .3s .15s, top .3s .15s, transform .3s;\r\n  }\r\n  .burger::after {\r\n    bottom: 0;\r\n    transition: bottom .3s .15s, transform .3s;\r\n  }\r\n  .burger-checkbox:checked + .burger::before {\r\n    top: 11px;\r\n    transform: rotate(45deg);\r\n    box-shadow: 0 6px 0 rgba(0,0,0,0);\r\n    transition: box-shadow .15s, top .3s, transform .3s .15s;\r\n  }\r\n  .burger-checkbox:checked + .burger::after {\r\n    bottom: 11px;\r\n    transform: rotate(-45deg);\r\n    transition: bottom .3s, transform .3s .15s;\r\n  }\r\n  .burger-checkbox:checked ~ .navigation {\r\n    transform: translateX(0);\r\n  }\r\n \r\n  \r\n\r\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -11637,7 +11723,7 @@ var ___HTML_LOADER_REPLACEMENT_17___ = _node_modules_html_loader_dist_runtime_ge
 var ___HTML_LOADER_REPLACEMENT_18___ = _node_modules_html_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_0___default()(___HTML_LOADER_IMPORT_18___);
 var ___HTML_LOADER_REPLACEMENT_19___ = _node_modules_html_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_0___default()(___HTML_LOADER_IMPORT_19___);
 var ___HTML_LOADER_REPLACEMENT_20___ = _node_modules_html_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_0___default()(___HTML_LOADER_IMPORT_20___);
-var code = "<!DOCTYPE html>\r\n<html lang=\"en\">\r\n<head>\r\n    <meta charset=\"UTF-8\">\r\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n    <link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"" + ___HTML_LOADER_REPLACEMENT_0___ + "\">\r\n    <title>Cozy House</title>\r\n</head>\r\n<body class=\"body\">\r\n\r\n    <section class=\"promo\">\r\n        <div class=\"wrapper promo__wrapper\">\r\n            <header class=\"header\">\r\n                <a href=\"#\" class=\"logo\">\r\n                    <h1 class=\"logo__title\">Cozy House</h1>\r\n                    <p class=\"logo__text\">Shelter for pets in Boston</p>\r\n                </a>\r\n                <nav class=\"header__navigation\">\r\n                    <input type=\"checkbox\" id=\"burger-checkbox\" class=\"burger-checkbox\">\r\n                    <label for=\"burger-checkbox\" class=\"burger\"></label>\r\n                    <ul class=\"navigation\">\r\n                        <li><a class=\"navigation__link\" href=\"#!\">About the shelter</a></li>\r\n                        <li><a class=\"navigation__link\" href=\"../pets/index.html\">Our pets</a></li>\r\n                        <li><a class=\"navigation__link\" href=\"#help\">Help the shelter</a></li>\r\n                        <li><a class=\"navigation__link\" href=\"#contacts\">Contacts</a></li>\r\n                    </ul>\r\n                </nav>\r\n            </header>\r\n            <div class=\"promo__content\">\r\n                <div class=\"promo__filling\">\r\n                    <h2 class=\"promo__title\">Not only people <br> need a house</h2>\r\n                    <p class=\"promo__text\">We offer to give a chance to a little and nice puppy with an extremely wide and open heart. He or she will love you more than anybody else in the world, you will see!</p>\r\n                    <button class=\"button button_filled\">Make a friend</button>\r\n                </div>\r\n                <div class=\"promo__puppy\">\r\n                    <img class=\"promo__image\" src=\"" + ___HTML_LOADER_REPLACEMENT_1___ + "\" alt=\"Start puppy\">\r\n                </div>\r\n            </div> \r\n        </div>\r\n    </section>\r\n\r\n    <section class=\"about\">\r\n        <div class=\"wrapper about__wrapper\">\r\n            <div class=\"about__pets\">\r\n                <img class=\"about__image\" src=\"" + ___HTML_LOADER_REPLACEMENT_2___ + "\" alt=\"About pets\">\r\n            </div>\r\n            <div class=\"about__content\">\r\n                <h1 class=\"about__title\">About the shelter <br> “Cozy House”</h1>\r\n                <p class=\"about__text\">Currently we have 121 dogs and 342 cats on our hands and statistics show that only 20% of them will find a family. The others will continue to live with us and will be waiting for a lucky chance to become dearly loved.</p>\r\n                <p class=\"about__text\">We feed our wards with the best food and make sure that they do not get sick, feel comfortable (including psychologically) and well. We are supported by 87 volunteers and 28 employees of various skill levels. About 12% of the animals are taken by the shelter staff. Taking care of the animals, they become attached to the pets and would hardly ever leave them alone.</p>\r\n            </div>\r\n        </div>\r\n    </section>\r\n\r\n    <section class=\"pets\">\r\n        <div class=\"wrapper pets__wrapper\">\r\n            <h1 class=\"pets__title\">Our friends who <br> are looking for a house</h1>\r\n                <div class=\"slider\">\r\n                    <button class=\"button button_circle button_left\"></button>\r\n                    <div class=\"slider__wrapper\">\r\n                        <div class=\"card\">\r\n                            <img class=\"card__image\" src=\"" + ___HTML_LOADER_REPLACEMENT_3___ + "\" alt=\"Cat Katrine\">\r\n                            <p class=\"card__name\">Katrine</p>\r\n                            <button class=\"button button_empty\">Learn more</button>\r\n                        </div>\r\n                        <div class=\"card\">\r\n                            <img class=\"card__image\" src=\"" + ___HTML_LOADER_REPLACEMENT_4___ + "\" alt=\"Pappy Jennifer\">\r\n                            <p class=\"card__name\">Jennifer</p>\r\n                            <button class=\"button button_empty\">Learn more</button>\r\n                        </div>\r\n                        <div class=\"card\">\r\n                            <img class=\"card__image\" src=\"" + ___HTML_LOADER_REPLACEMENT_5___ + "\" alt=\"Dog Woody\">\r\n                            <p class=\"card__name\">Woody</p>\r\n                            <button class=\"button button_empty\">Learn more</button>\r\n                        </div>\r\n                    </div>\r\n                    <button type=\"button\" class=\"button button_circle button_right\"></button>\r\n                </div>\r\n            <a href=\"../pets/index.html\"><button class=\"button button_filled\">Get to know the rest</button></a>\r\n        </div>\r\n    </section>\r\n\r\n    <section class=\"help\" id=\"help\">\r\n        <div class=\"wrapper help__wrapper\">\r\n            <h1 class=\"help__title\">How you can help <br> our shelter</h1>\r\n            <div class=\"help-list\">\r\n                <div class=\"help-list__content\">\r\n                    <img class=\"help-list__image\" src=\"" + ___HTML_LOADER_REPLACEMENT_6___ + "\" alt=\"\">\r\n                    <p class=\"help-list__text\">Pet food</p>\r\n                </div>\r\n                <div class=\"help-list__content\">\r\n                    <img class=\"help-list__image\" src=\"" + ___HTML_LOADER_REPLACEMENT_7___ + "\" alt=\"\">\r\n                    <p class=\"help-list__text\">Transportation</p>\r\n                </div>\r\n                <div class=\"help-list__content\">\r\n                    <img class=\"help-list__image\" src=\"" + ___HTML_LOADER_REPLACEMENT_8___ + "\" alt=\"\">\r\n                    <p class=\"help-list__text\">Toys</p>\r\n                </div>\r\n                <div class=\"help-list__content\">\r\n                    <img class=\"help-list__image\" src=\"" + ___HTML_LOADER_REPLACEMENT_9___ + "\" alt=\"\">\r\n                    <p class=\"help-list__text\">Bowls and cups</p>\r\n                </div>\r\n                <div class=\"help-list__content\">\r\n                    <img class=\"help-list__image\" src=\"" + ___HTML_LOADER_REPLACEMENT_10___ + "\" alt=\"\">\r\n                    <p class=\"help-list__text\">Shampoos</p>\r\n                </div>\r\n                <div class=\"help-list__content\">\r\n                    <img class=\"help-list__image\" src=\"" + ___HTML_LOADER_REPLACEMENT_11___ + "\" alt=\"\">\r\n                    <p class=\"help-list__text\">Vitamins</p>\r\n                </div>\r\n                <div class=\"help-list__content\">\r\n                    <img class=\"help-list__image\" src=\"" + ___HTML_LOADER_REPLACEMENT_12___ + "\" alt=\"\">\r\n                    <p class=\"help-list__text\">Medicines</p>\r\n                </div>\r\n                <div class=\"help-list__content\">\r\n                    <img class=\"help-list__image\" src=\"" + ___HTML_LOADER_REPLACEMENT_13___ + "\" alt=\"\">\r\n                    <p class=\"help-list__text\">Collars / leashes</p>\r\n                </div>\r\n                <div class=\"help-list__content\">\r\n                    <img class=\"help-list__image\" src=\"" + ___HTML_LOADER_REPLACEMENT_14___ + "\" alt=\"\">\r\n                    <p class=\"help-list__text\">Sleeping areas</p>\r\n                </div>\r\n            </div>\r\n    </section>\r\n    \r\n    <section class=\"donation\">\r\n        <div class=\"wrapper donation__wrapper\">\r\n            <img  class=\"donation__image\" src=\"" + ___HTML_LOADER_REPLACEMENT_15___ + "\" alt=\"Donation dog\">\r\n            <div class=\"donation__content\">\r\n                <h1 class=\"donation__title\">You can also make a donation</h1>\r\n                <p class=\"donation__subtitle\">Name of the bank / Type of bank account</p>\r\n                <div class=\"donation__card\">\r\n                    <img class=\"donation__card-image\" src=\"" + ___HTML_LOADER_REPLACEMENT_16___ + "\" alt=\"\">\r\n                    <p class=\"donation-num\">8380 2880 8028 8791 7435</p>\r\n                </div>\r\n                <p class=\"donation__copyright\">Legal information and lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas a ipsum at libero sagittis dignissim sed ac diam. Praesent ultrices maximus tortor et vulputate. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>\r\n            </div>\r\n        </div>\r\n    </section>\r\n\r\n    <footer class=\"footer\" id=\"contacts\">\r\n        <div class=\"wrapper footer__wrapper\">\r\n                <div class=\"footer__contacts\">\r\n                    <h1 class=\"footer__title\">For questions and&nbspsuggestions</h1>\r\n                    <div class=\"footer__contact\">\r\n                        <img  class=\"footer__icon footer__icon_mail\" src=\"" + ___HTML_LOADER_REPLACEMENT_17___ + "\" alt=\"\">\r\n                        <a class=\"footer__data\" href=\"mailto:email@shelter.com\">email@shelter.com</a></li>\r\n                    </div>\r\n                    <div class=\"footer__contact\">\r\n                        <img  class=\"footer__icon footer__icon_phone\" src=\"" + ___HTML_LOADER_REPLACEMENT_18___ + "\" alt=\"\">\r\n                        <a class=\"footer__data\" href=\"tel:+13-674-567-75-54\">+13 674 567 75 54</a>\r\n                    </div>\r\n                </div>\r\n                <div class=\"footer__location\">\r\n                    <h1 class=\"footer__title\">We are waiting for your visit</h1>\r\n                    <div class=\"footer__contact\">\r\n                        <img class=\"footer__icon footer__icon_loc\" src=\"" + ___HTML_LOADER_REPLACEMENT_19___ + "\" alt=\"\">\r\n                        <a href=\"https://www.google.ru/maps/place/1+Central+St,+Boston,+MA+02109,+%D0%A1%D0%A8%D0%90/@42.358543,-71.0547431,21z/data=!4m5!3m4!1s0x89e370868bc2ce7b:0x82fa7db94f5fea9e!8m2!3d42.3585519!4d-71.0547263?hl=ru&entry=ttu\" class=\"footer__data\">1 Central Street, Boston (entrance from the store)</a>\r\n                    </div>\r\n                    <div class=\"footer__contact\">\r\n                        <img  class=\"footer__icon footer__icon_loc\" src=\"" + ___HTML_LOADER_REPLACEMENT_19___ + "\" alt=\"\">\r\n                        <a href=\"https://www.google.ru/maps/place/18+S+Park+Cres,+London+SE6+1JW,+%D0%92%D0%B5%D0%BB%D0%B8%D0%BA%D0%BE%D0%B1%D1%80%D0%B8%D1%82%D0%B0%D0%BD%D0%B8%D1%8F/@51.4422353,0.0047064,17.5z/data=!4m6!3m5!1s0x47d8a9e35f520529:0x8d1b5611767e32ec!8m2!3d51.4424572!4d0.0058136!16s%2Fg%2F11c4qzkt24?hl=ru&entry=ttu\" class=\"footer__data\">18 South Park, London</a>\r\n                    </div>\r\n                </div>\r\n                <img class=\"footer__image\" src=\"" + ___HTML_LOADER_REPLACEMENT_20___ + "\" alt=\"Footer pappy\">\r\n            </div>\r\n    </footer>\r\n\r\n</body>\r\n</html>";
+var code = "<!DOCTYPE html>\r\n<html lang=\"en\">\r\n<head>\r\n    <meta charset=\"UTF-8\">\r\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n    <link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"" + ___HTML_LOADER_REPLACEMENT_0___ + "\">\r\n    <title>Cozy House</title>\r\n</head>\r\n<body class=\"body\">\r\n\r\n    <section class=\"promo\">\r\n        <div class=\"wrapper promo__wrapper\">\r\n            <header class=\"header\">\r\n                <a href=\"#\" class=\"logo\">\r\n                    <h1 class=\"logo__title\">Cozy House</h1>\r\n                    <p class=\"logo__text\">Shelter for pets in Boston</p>\r\n                </a>\r\n                <nav class=\"header__navigation\">\r\n                    <input type=\"checkbox\" id=\"burger-checkbox\" class=\"burger-checkbox\">\r\n                    <label for=\"burger-checkbox\" class=\"burger\"></label>\r\n                    <ul class=\"navigation\">\r\n                        <li><a class=\"navigation__link\" href=\"#!\">About the shelter</a></li>\r\n                        <li><a class=\"navigation__link\" href=\"../pets\">Our pets</a></li>\r\n                        <li><a class=\"navigation__link\" href=\"#help\">Help the shelter</a></li>\r\n                        <li><a class=\"navigation__link\" href=\"#contacts\">Contacts</a></li>\r\n                    </ul>\r\n                </nav>\r\n            </header>\r\n            <div class=\"promo__content\">\r\n                <div class=\"promo__filling\">\r\n                    <h2 class=\"promo__title\">Not only people <br> need a house</h2>\r\n                    <p class=\"promo__text\">We offer to give a chance to a little and nice puppy with an extremely wide and open heart. He or she will love you more than anybody else in the world, you will see!</p>\r\n                    <button class=\"button button_filled\">Make a friend</button>\r\n                </div>\r\n                <div class=\"promo__puppy\">\r\n                    <img class=\"promo__image\" src=\"" + ___HTML_LOADER_REPLACEMENT_1___ + "\" alt=\"Start puppy\">\r\n                </div>\r\n            </div> \r\n        </div>\r\n    </section>\r\n\r\n    <section class=\"about\">\r\n        <div class=\"wrapper about__wrapper\">\r\n            <div class=\"about__pets\">\r\n                <img class=\"about__image\" src=\"" + ___HTML_LOADER_REPLACEMENT_2___ + "\" alt=\"About pets\">\r\n            </div>\r\n            <div class=\"about__content\">\r\n                <h1 class=\"about__title\">About the shelter <br> “Cozy House”</h1>\r\n                <p class=\"about__text\">Currently we have 121 dogs and 342 cats on our hands and statistics show that only 20% of them will find a family. The others will continue to live with us and will be waiting for a lucky chance to become dearly loved.</p>\r\n                <p class=\"about__text\">We feed our wards with the best food and make sure that they do not get sick, feel comfortable (including psychologically) and well. We are supported by 87 volunteers and 28 employees of various skill levels. About 12% of the animals are taken by the shelter staff. Taking care of the animals, they become attached to the pets and would hardly ever leave them alone.</p>\r\n            </div>\r\n        </div>\r\n    </section>\r\n\r\n    <section class=\"pets\">\r\n        <div class=\"wrapper pets__wrapper\">\r\n            <h1 class=\"pets__title\">Our friends who <br> are looking for a house</h1>\r\n                <div class=\"slider\">\r\n                    <button class=\"button button_circle button_left\"></button>\r\n                    <div class=\"slider__wrapper\">\r\n                        <div class=\"card\">\r\n                            <img class=\"card__image\" src=\"" + ___HTML_LOADER_REPLACEMENT_3___ + "\" alt=\"Cat Katrine\">\r\n                            <p class=\"card__name\">Katrine</p>\r\n                            <button class=\"button button_empty\">Learn more</button>\r\n                        </div>\r\n                        <div class=\"card\">\r\n                            <img class=\"card__image\" src=\"" + ___HTML_LOADER_REPLACEMENT_4___ + "\" alt=\"Pappy Jennifer\">\r\n                            <p class=\"card__name\">Jennifer</p>\r\n                            <button class=\"button button_empty\">Learn more</button>\r\n                        </div>\r\n                        <div class=\"card\">\r\n                            <img class=\"card__image\" src=\"" + ___HTML_LOADER_REPLACEMENT_5___ + "\" alt=\"Dog Woody\">\r\n                            <p class=\"card__name\">Woody</p>\r\n                            <button class=\"button button_empty\">Learn more</button>\r\n                        </div>\r\n                    </div>\r\n                    <button type=\"button\" class=\"button button_circle button_right\"></button>\r\n                </div>\r\n            <a href=\"../pets/index.html\"><button class=\"button button_filled\">Get to know the rest</button></a>\r\n        </div>\r\n    </section>\r\n\r\n    <section class=\"help\" id=\"help\">\r\n        <div class=\"wrapper help__wrapper\">\r\n            <h1 class=\"help__title\">How you can help <br> our shelter</h1>\r\n            <div class=\"help-list\">\r\n                <div class=\"help-list__content\">\r\n                    <img class=\"help-list__image\" src=\"" + ___HTML_LOADER_REPLACEMENT_6___ + "\" alt=\"\">\r\n                    <p class=\"help-list__text\">Pet food</p>\r\n                </div>\r\n                <div class=\"help-list__content\">\r\n                    <img class=\"help-list__image\" src=\"" + ___HTML_LOADER_REPLACEMENT_7___ + "\" alt=\"\">\r\n                    <p class=\"help-list__text\">Transportation</p>\r\n                </div>\r\n                <div class=\"help-list__content\">\r\n                    <img class=\"help-list__image\" src=\"" + ___HTML_LOADER_REPLACEMENT_8___ + "\" alt=\"\">\r\n                    <p class=\"help-list__text\">Toys</p>\r\n                </div>\r\n                <div class=\"help-list__content\">\r\n                    <img class=\"help-list__image\" src=\"" + ___HTML_LOADER_REPLACEMENT_9___ + "\" alt=\"\">\r\n                    <p class=\"help-list__text\">Bowls and cups</p>\r\n                </div>\r\n                <div class=\"help-list__content\">\r\n                    <img class=\"help-list__image\" src=\"" + ___HTML_LOADER_REPLACEMENT_10___ + "\" alt=\"\">\r\n                    <p class=\"help-list__text\">Shampoos</p>\r\n                </div>\r\n                <div class=\"help-list__content\">\r\n                    <img class=\"help-list__image\" src=\"" + ___HTML_LOADER_REPLACEMENT_11___ + "\" alt=\"\">\r\n                    <p class=\"help-list__text\">Vitamins</p>\r\n                </div>\r\n                <div class=\"help-list__content\">\r\n                    <img class=\"help-list__image\" src=\"" + ___HTML_LOADER_REPLACEMENT_12___ + "\" alt=\"\">\r\n                    <p class=\"help-list__text\">Medicines</p>\r\n                </div>\r\n                <div class=\"help-list__content\">\r\n                    <img class=\"help-list__image\" src=\"" + ___HTML_LOADER_REPLACEMENT_13___ + "\" alt=\"\">\r\n                    <p class=\"help-list__text\">Collars / leashes</p>\r\n                </div>\r\n                <div class=\"help-list__content\">\r\n                    <img class=\"help-list__image\" src=\"" + ___HTML_LOADER_REPLACEMENT_14___ + "\" alt=\"\">\r\n                    <p class=\"help-list__text\">Sleeping areas</p>\r\n                </div>\r\n            </div>\r\n    </section>\r\n    \r\n    <section class=\"donation\">\r\n        <div class=\"wrapper donation__wrapper\">\r\n            <img  class=\"donation__image\" src=\"" + ___HTML_LOADER_REPLACEMENT_15___ + "\" alt=\"Donation dog\">\r\n            <div class=\"donation__content\">\r\n                <h1 class=\"donation__title\">You can also make a donation</h1>\r\n                <p class=\"donation__subtitle\">Name of the bank / Type of bank account</p>\r\n                <div class=\"donation__card\">\r\n                    <img class=\"donation__card-image\" src=\"" + ___HTML_LOADER_REPLACEMENT_16___ + "\" alt=\"\">\r\n                    <p class=\"donation-num\">8380 2880 8028 8791 7435</p>\r\n                </div>\r\n                <p class=\"donation__copyright\">Legal information and lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas a ipsum at libero sagittis dignissim sed ac diam. Praesent ultrices maximus tortor et vulputate. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>\r\n            </div>\r\n        </div>\r\n    </section>\r\n\r\n    <footer class=\"footer\" id=\"contacts\">\r\n        <div class=\"wrapper footer__wrapper\">\r\n                <div class=\"footer__contacts\">\r\n                    <h1 class=\"footer__title\">For questions and&nbspsuggestions</h1>\r\n                    <div class=\"footer__contact\">\r\n                        <img  class=\"footer__icon footer__icon_mail\" src=\"" + ___HTML_LOADER_REPLACEMENT_17___ + "\" alt=\"\">\r\n                        <a class=\"footer__data\" href=\"mailto:email@shelter.com\">email@shelter.com</a></li>\r\n                    </div>\r\n                    <div class=\"footer__contact\">\r\n                        <img  class=\"footer__icon footer__icon_phone\" src=\"" + ___HTML_LOADER_REPLACEMENT_18___ + "\" alt=\"\">\r\n                        <a class=\"footer__data\" href=\"tel:+13-674-567-75-54\">+13 674 567 75 54</a>\r\n                    </div>\r\n                </div>\r\n                <div class=\"footer__location\">\r\n                    <h1 class=\"footer__title\">We are waiting for your visit</h1>\r\n                    <div class=\"footer__contact\">\r\n                        <img class=\"footer__icon footer__icon_loc\" src=\"" + ___HTML_LOADER_REPLACEMENT_19___ + "\" alt=\"\">\r\n                        <a href=\"https://www.google.ru/maps/place/1+Central+St,+Boston,+MA+02109,+%D0%A1%D0%A8%D0%90/@42.358543,-71.0547431,21z/data=!4m5!3m4!1s0x89e370868bc2ce7b:0x82fa7db94f5fea9e!8m2!3d42.3585519!4d-71.0547263?hl=ru&entry=ttu\" class=\"footer__data\">1 Central Street, Boston (entrance from the store)</a>\r\n                    </div>\r\n                    <div class=\"footer__contact\">\r\n                        <img  class=\"footer__icon footer__icon_loc\" src=\"" + ___HTML_LOADER_REPLACEMENT_19___ + "\" alt=\"\">\r\n                        <a href=\"https://www.google.ru/maps/place/18+S+Park+Cres,+London+SE6+1JW,+%D0%92%D0%B5%D0%BB%D0%B8%D0%BA%D0%BE%D0%B1%D1%80%D0%B8%D1%82%D0%B0%D0%BD%D0%B8%D1%8F/@51.4422353,0.0047064,17.5z/data=!4m6!3m5!1s0x47d8a9e35f520529:0x8d1b5611767e32ec!8m2!3d51.4424572!4d0.0058136!16s%2Fg%2F11c4qzkt24?hl=ru&entry=ttu\" class=\"footer__data\">18 South Park, London</a>\r\n                    </div>\r\n                </div>\r\n                <img class=\"footer__image\" src=\"" + ___HTML_LOADER_REPLACEMENT_20___ + "\" alt=\"Footer pappy\">\r\n            </div>\r\n    </footer>\r\n\r\n</body>\r\n</html>";
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (code);
 
@@ -11685,7 +11771,7 @@ var ___HTML_LOADER_REPLACEMENT_9___ = _node_modules_html_loader_dist_runtime_get
 var ___HTML_LOADER_REPLACEMENT_10___ = _node_modules_html_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_0___default()(___HTML_LOADER_IMPORT_10___);
 var ___HTML_LOADER_REPLACEMENT_11___ = _node_modules_html_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_0___default()(___HTML_LOADER_IMPORT_11___);
 var ___HTML_LOADER_REPLACEMENT_12___ = _node_modules_html_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_0___default()(___HTML_LOADER_IMPORT_12___);
-var code = "<!DOCTYPE html>\r\n<html lang=\"en\">\r\n<head>\r\n    <meta charset=\"UTF-8\">\r\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n    <link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"" + ___HTML_LOADER_REPLACEMENT_0___ + "\">\r\n    <title>Pets</title>\r\n</head>\r\n<body class=\"body body_light\">\r\n\r\n    <div class=\"wrapper\">\r\n    <header class=\"header header_light\">\r\n        <a href=\"../main/index.html\" class=\"logo logo_pets\">\r\n            <h1 class=\"logo__title\">Cozy House</h1>\r\n            <p class=\"logo__text\">Shelter for pets in Boston</p>\r\n        </a>\r\n        <nav class=\"header__navigation\">\r\n            <input type=\"checkbox\" id=\"burger-checkbox\" class=\"burger-checkbox\">\r\n            <label for=\"burger-checkbox\" class=\"burger burger-dark\"></label>\r\n            <ul class=\"navigation\">\r\n                <li><a class=\"navigation__link\" href=\"../main/index.html\">About the shelter</a></li>\r\n                <li><a class=\"navigation__link\" href=\"#!\">Our pets</a></li>\r\n                <li><a class=\"navigation__link\" href=\"../main/index.html#help\">Help the shelter</a></li>\r\n                <li><a class=\"navigation__link\" href=\"#contacts\">Contacts</a></li>\r\n            </ul>\r\n        </nav>\r\n    </header>\r\n    </div>\r\n    \r\n    <section class=\"friends\">\r\n        <h1 class=\"friends__title\">Our friends who are&nbsplooking for a house</h1>\r\n        <div class=\"slider-friends\">\r\n            <div class=\"slider-friends__wrapper\">\r\n                <div class=\"card\">\r\n                    <img class=\"card__image\" src=\"" + ___HTML_LOADER_REPLACEMENT_1___ + "\" alt=\"Cat Katrine\">\r\n                    <p class=\"card__name\">Katrine</p>\r\n                    <button class=\"button button_empty\">Learn more</button>\r\n                </div>\r\n                <div class=\"card\">\r\n                    <img class=\"card__image\" src=\"" + ___HTML_LOADER_REPLACEMENT_2___ + "\" alt=\"Pappy Jennifer\">\r\n                    <p class=\"card__name\">Jennifer</p>\r\n                    <button class=\"button button_empty\">Learn more</button>\r\n                </div>\r\n                <div class=\"card\">\r\n                    <img class=\"card__image\" src=\"" + ___HTML_LOADER_REPLACEMENT_3___ + "\" alt=\"Dog Woody\">\r\n                    <p class=\"card__name\">Woody</p>\r\n                    <button class=\"button button_empty\">Learn more</button>\r\n                </div>\r\n                <div class=\"card\">\r\n                    <img class=\"card__image\" src=\"" + ___HTML_LOADER_REPLACEMENT_4___ + "\" alt=\"Pappy Sophia\">\r\n                    <p class=\"card__name\">Sophia</p>\r\n                    <button class=\"button button_empty\">Learn more</button>\r\n                </div>\r\n                <div class=\"card\">\r\n                    <img class=\"card__image\" src=\"" + ___HTML_LOADER_REPLACEMENT_5___ + "\" alt=\"Cat Timmy\">\r\n                    <p class=\"card__name\">Timmy</p>\r\n                    <button class=\"button button_empty\">Learn more</button>\r\n                </div>\r\n                <div class=\"card\">\r\n                    <img class=\"card__image\" src=\"" + ___HTML_LOADER_REPLACEMENT_6___ + "\" alt=\"Dog Charly\">\r\n                    <p class=\"card__name\">Charly</p>\r\n                    <button class=\"button button_empty\">Learn more</button>\r\n                </div>\r\n                <div class=\"card\">\r\n                    <img class=\"card__image\" src=\"" + ___HTML_LOADER_REPLACEMENT_7___ + "\" alt=\"Pappy Scarlett\">\r\n                    <p class=\"card__name\">Scarlett</p>\r\n                    <button class=\"button button_empty\">Learn more</button>\r\n                </div>\r\n                <div class=\"card\">\r\n                    <img class=\"card__image\" src=\"" + ___HTML_LOADER_REPLACEMENT_8___ + "\" alt=\"Cat Freddie\">\r\n                    <p class=\"card__name\">Freddie</p>\r\n                    <button class=\"button button_empty\">Learn more</button>\r\n                </div>\r\n            </div>\r\n        </div>\r\n         <div class=\"friend__pagination pagination\">\r\n                <button class=\"pagination__btn pagination__btn_disabled\" disabled=\"disabled\">&lt;&lt;</button>\r\n                <button class=\"pagination__btn pagination__btn_disabled\" disabled=\"disabled\">&lt;</button>\r\n                <button class=\"pagination__btn pagination__btn_fill\">1</button>\r\n                <button class=\"pagination__btn\">&gt;</button>\r\n                <button class=\"pagination__btn\">&gt;&gt;</button>\r\n            </div>\r\n    </section>\r\n\r\n    <footer class=\"footer\" id=\"contacts\">\r\n        <div class=\"wrapper footer__wrapper\">\r\n                <div class=\"footer__contacts\">\r\n                    <h1 class=\"footer__title\">For questions and&nbspsuggestions</h1>\r\n                    <div class=\"footer__contact\">\r\n                        <img  class=\"footer__icon footer__icon_mail\" src=\"" + ___HTML_LOADER_REPLACEMENT_9___ + "\" alt=\"\">\r\n                        <a class=\"footer__data\" href=\"mailto:email@shelter.com\">email@shelter.com</a></li>\r\n                    </div>\r\n                    <div class=\"footer__contact\">\r\n                        <img  class=\"footer__icon footer__icon_phone\" src=\"" + ___HTML_LOADER_REPLACEMENT_10___ + "\" alt=\"\">\r\n                        <a class=\"footer__data\" href=\"tel:+13 674 567 75 54\">+13 674 567 75 54</a>\r\n                    </div>\r\n                </div>\r\n                <div class=\"footer__location\">\r\n                    <h1 class=\"footer__title\">We are waiting for your visit</h1>\r\n                    <div class=\"footer__contact\">\r\n                        <img class=\"footer__icon footer__icon_loc\" src=\"" + ___HTML_LOADER_REPLACEMENT_11___ + "\" alt=\"\">\r\n                        <a href=\"https://www.google.ru/maps/place/1+Central+St,+Boston,+MA+02109,+%D0%A1%D0%A8%D0%90/@42.358543,-71.0547431,21z/data=!4m5!3m4!1s0x89e370868bc2ce7b:0x82fa7db94f5fea9e!8m2!3d42.3585519!4d-71.0547263?hl=ru&entry=ttu\" class=\"footer__data\">1 Central Street, Boston (entrance from the store)</a>\r\n                    </div>\r\n                    <div class=\"footer__contact\">\r\n                        <img  class=\"footer__icon footer__icon_loc\" src=\"" + ___HTML_LOADER_REPLACEMENT_11___ + "\" alt=\"\">\r\n                        <a href=\"https://www.google.ru/maps/place/18+S+Park+Cres,+London+SE6+1JW,+%D0%92%D0%B5%D0%BB%D0%B8%D0%BA%D0%BE%D0%B1%D1%80%D0%B8%D1%82%D0%B0%D0%BD%D0%B8%D1%8F/@51.4422353,0.0047064,17.5z/data=!4m6!3m5!1s0x47d8a9e35f520529:0x8d1b5611767e32ec!8m2!3d51.4424572!4d0.0058136!16s%2Fg%2F11c4qzkt24?hl=ru&entry=ttu\" class=\"footer__data\">18 South Park, London</a>\r\n                    </div>\r\n                </div>\r\n                <img class=\"footer__image\" src=\"" + ___HTML_LOADER_REPLACEMENT_12___ + "\" alt=\"\">\r\n            </div>\r\n    </footer>\r\n\r\n</body>\r\n</html>";
+var code = "<!DOCTYPE html>\r\n<html lang=\"en\">\r\n<head>\r\n    <meta charset=\"UTF-8\">\r\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n    <link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"" + ___HTML_LOADER_REPLACEMENT_0___ + "\">\r\n    <title>Pets</title>\r\n</head>\r\n<body class=\"body body_light\">\r\n\r\n    <div class=\"wrapper\">\r\n    <header class=\"header header_light\">\r\n        <a href=\"../main/index.html\" class=\"logo logo_pets\">\r\n            <h1 class=\"logo__title\">Cozy House</h1>\r\n            <p class=\"logo__text\">Shelter for pets in Boston</p>\r\n        </a>\r\n        <nav class=\"header__navigation navigation_pets\">\r\n            <input type=\"checkbox\" id=\"burger-checkbox\" class=\"burger-checkbox\">\r\n            <label for=\"burger-checkbox\" class=\"burger burger_dark\"></label>\r\n            <ul class=\"navigation\">\r\n                <li><a class=\"navigation__link\" href=\"../main\">About the shelter</a></li>\r\n                <li><a class=\"navigation__link\" href=\"#!\">Our pets</a></li>\r\n                <li><a class=\"navigation__link\" href=\"../main#help\">Help the shelter</a></li>\r\n                <li><a class=\"navigation__link\" href=\"#contacts\">Contacts</a></li>\r\n            </ul>\r\n        </nav>\r\n    </header>\r\n    </div>\r\n    \r\n    <section class=\"friends\">\r\n        <h1 class=\"friends__title\">Our friends who are&nbsplooking for a house</h1>\r\n        <div class=\"slider-friends\">\r\n            <div class=\"slider-friends__wrapper\">\r\n                <div class=\"card\">\r\n                    <img class=\"card__image\" src=\"" + ___HTML_LOADER_REPLACEMENT_1___ + "\" alt=\"Cat Katrine\">\r\n                    <p class=\"card__name\">Katrine</p>\r\n                    <button class=\"button button_empty\">Learn more</button>\r\n                </div>\r\n                <div class=\"card\">\r\n                    <img class=\"card__image\" src=\"" + ___HTML_LOADER_REPLACEMENT_2___ + "\" alt=\"Pappy Jennifer\">\r\n                    <p class=\"card__name\">Jennifer</p>\r\n                    <button class=\"button button_empty\">Learn more</button>\r\n                </div>\r\n                <div class=\"card\">\r\n                    <img class=\"card__image\" src=\"" + ___HTML_LOADER_REPLACEMENT_3___ + "\" alt=\"Dog Woody\">\r\n                    <p class=\"card__name\">Woody</p>\r\n                    <button class=\"button button_empty\">Learn more</button>\r\n                </div>\r\n                <div class=\"card\">\r\n                    <img class=\"card__image\" src=\"" + ___HTML_LOADER_REPLACEMENT_4___ + "\" alt=\"Pappy Sophia\">\r\n                    <p class=\"card__name\">Sophia</p>\r\n                    <button class=\"button button_empty\">Learn more</button>\r\n                </div>\r\n                <div class=\"card\">\r\n                    <img class=\"card__image\" src=\"" + ___HTML_LOADER_REPLACEMENT_5___ + "\" alt=\"Cat Timmy\">\r\n                    <p class=\"card__name\">Timmy</p>\r\n                    <button class=\"button button_empty\">Learn more</button>\r\n                </div>\r\n                <div class=\"card\">\r\n                    <img class=\"card__image\" src=\"" + ___HTML_LOADER_REPLACEMENT_6___ + "\" alt=\"Dog Charly\">\r\n                    <p class=\"card__name\">Charly</p>\r\n                    <button class=\"button button_empty\">Learn more</button>\r\n                </div>\r\n                <div class=\"card\">\r\n                    <img class=\"card__image\" src=\"" + ___HTML_LOADER_REPLACEMENT_7___ + "\" alt=\"Pappy Scarlett\">\r\n                    <p class=\"card__name\">Scarlett</p>\r\n                    <button class=\"button button_empty\">Learn more</button>\r\n                </div>\r\n                <div class=\"card\">\r\n                    <img class=\"card__image\" src=\"" + ___HTML_LOADER_REPLACEMENT_8___ + "\" alt=\"Cat Freddie\">\r\n                    <p class=\"card__name\">Freddie</p>\r\n                    <button class=\"button button_empty\">Learn more</button>\r\n                </div>\r\n            </div>\r\n        </div>\r\n         <div class=\"friend__pagination pagination\">\r\n                <button class=\"pagination__btn pagination__btn_disabled\" disabled>&lt;&lt;</button>\r\n                <button class=\"pagination__btn pagination__btn_disabled\" disabled>&lt;</button>\r\n                <button class=\"pagination__btn pagination__btn_fill\">1</button>\r\n                <button class=\"pagination__btn\">&gt;</button>\r\n                <button class=\"pagination__btn\">&gt;&gt;</button>\r\n            </div>\r\n    </section>\r\n\r\n    <footer class=\"footer\" id=\"contacts\">\r\n        <div class=\"wrapper footer__wrapper\">\r\n                <div class=\"footer__contacts\">\r\n                    <h1 class=\"footer__title\">For questions and&nbspsuggestions</h1>\r\n                    <div class=\"footer__contact\">\r\n                        <img  class=\"footer__icon footer__icon_mail\" src=\"" + ___HTML_LOADER_REPLACEMENT_9___ + "\" alt=\"\">\r\n                        <a class=\"footer__data\" href=\"mailto:email@shelter.com\">email@shelter.com</a></li>\r\n                    </div>\r\n                    <div class=\"footer__contact\">\r\n                        <img  class=\"footer__icon footer__icon_phone\" src=\"" + ___HTML_LOADER_REPLACEMENT_10___ + "\" alt=\"\">\r\n                        <a class=\"footer__data\" href=\"tel:+13 674 567 75 54\">+13 674 567 75 54</a>\r\n                    </div>\r\n                </div>\r\n                <div class=\"footer__location\">\r\n                    <h1 class=\"footer__title\">We are waiting for your visit</h1>\r\n                    <div class=\"footer__contact\">\r\n                        <img class=\"footer__icon footer__icon_loc\" src=\"" + ___HTML_LOADER_REPLACEMENT_11___ + "\" alt=\"\">\r\n                        <a href=\"https://www.google.ru/maps/place/1+Central+St,+Boston,+MA+02109,+%D0%A1%D0%A8%D0%90/@42.358543,-71.0547431,21z/data=!4m5!3m4!1s0x89e370868bc2ce7b:0x82fa7db94f5fea9e!8m2!3d42.3585519!4d-71.0547263?hl=ru&entry=ttu\" class=\"footer__data\">1 Central Street, Boston (entrance from the store)</a>\r\n                    </div>\r\n                    <div class=\"footer__contact\">\r\n                        <img  class=\"footer__icon footer__icon_loc\" src=\"" + ___HTML_LOADER_REPLACEMENT_11___ + "\" alt=\"\">\r\n                        <a href=\"https://www.google.ru/maps/place/18+S+Park+Cres,+London+SE6+1JW,+%D0%92%D0%B5%D0%BB%D0%B8%D0%BA%D0%BE%D0%B1%D1%80%D0%B8%D1%82%D0%B0%D0%BD%D0%B8%D1%8F/@51.4422353,0.0047064,17.5z/data=!4m6!3m5!1s0x47d8a9e35f520529:0x8d1b5611767e32ec!8m2!3d51.4424572!4d0.0058136!16s%2Fg%2F11c4qzkt24?hl=ru&entry=ttu\" class=\"footer__data\">18 South Park, London</a>\r\n                    </div>\r\n                </div>\r\n                <img class=\"footer__image\" src=\"" + ___HTML_LOADER_REPLACEMENT_12___ + "\" alt=\"\">\r\n            </div>\r\n    </footer>\r\n\r\n</body>\r\n</html>";
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (code);
 
@@ -12827,4 +12913,4 @@ __webpack_require__.r(__webpack_exports__);
 
 /******/ })()
 ;
-//# sourceMappingURL=main.cc6bf57a7c5ada39ff76.js.map
+//# sourceMappingURL=main.cf7afef26fb78a5058cd.js.map
