@@ -1,10 +1,19 @@
+* {
+    box-sizing: border-box;
+}
+
 html {
     font-size: 10px;
     scroll-behavior: smooth;
-}
-
-* {
-    box-sizing: border-box;
+    @media screen and (min-width: $mobile-small-width) {
+        &::-webkit-scrollbar {
+          width: 0.5rem;
+        }
+        &::-webkit-scrollbar-thumb {
+          background-color: $color-light;
+          border-radius: 1rem;
+        }
+      }
 }
 
 .body{

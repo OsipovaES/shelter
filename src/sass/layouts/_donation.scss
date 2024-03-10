@@ -2,13 +2,22 @@
     background-color: $color-light-add;
     padding: 8rem 18.2rem 10rem 18.3rem;
     @include media-mobile {
-            padding: 4.2rem 1rem;
+        padding: 4.2rem 1rem;
     }
+    @media (max-width: 715px) {
+        padding: 5rem;
+      }
+      @include media-mobile {
+        padding: 4.2rem 1rem
+      }
     &__wrapper {
         @include flex();
         gap: 3rem;
         max-width: 128rem;
         width: 100%;
+        @media (max-width: 990px) {
+            flex-direction: column;
+          }
         @include media-tablet {
             flex-direction: column-reverse;
             gap: 6rem;

@@ -4,6 +4,12 @@
         @include flex($justify: space-between);
         max-width: 128rem;
         width: 94%;
+        @media (max-width: 990px) {
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 6rem;
+            padding-top: 5rem;
+        }
         @include media-tablet {
             padding-top: 3rem;
             flex-wrap: wrap;

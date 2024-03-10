@@ -16,7 +16,7 @@
         }
     }
     &__content {
-        @include flex($flex-dir:column);
+        @include flex($flex-dir:column, $i-align: flex-start);
         gap: 2.5rem;
         max-width: 43rem;
         width: 100%;   

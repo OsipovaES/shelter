@@ -15,6 +15,17 @@
         gap: 9rem;
         max-width: 128rem;
         width: 100%;
+        @media (max-width: 1126px) {
+            gap: 6rem;
+            .card:nth-child(n + 3) {
+                display: none;
+            }
+        }
+        @media (max-width: 715px) {
+            .card:nth-child(n + 2) {
+                display: none;
+            }
+        }
         @include media-tablet {
             gap: 4rem;
             .card:nth-child(n + 3) {
@@ -51,7 +62,7 @@
     gap: 4.5rem;
     &__wrapper {
         @include flex($flex-wrap: wrap);
-        gap: 3rem 4rem;
+        gap: 3rem 3.8rem;
         @include media-tablet {
             resize: 1rem;
             .card:nth-child(n + 7) {

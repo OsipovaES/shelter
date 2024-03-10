@@ -12,6 +12,8 @@
         color: $color-dark;
         &_disabled {
             border: 2px solid $color-gray;
+            color: $color-gray;
+            cursor: not-allowed;
         }
         &_fill {
             background-color: $color-primary;

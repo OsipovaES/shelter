@@ -16,6 +16,12 @@
         width: 100%;
         padding: 0 4rem;
         gap: 4.2rem;
+        @media (max-width: 990px) {
+            flex-direction: column;
+            height: auto;
+            align-items: center;
+            gap: 5rem;
+        }
         @include media-tablet {
             flex-direction: column;
             height: auto;
@@ -33,6 +39,9 @@
         gap: 4.2rem;
         max-width: 46rem;
         width: 100%;
+        @media (max-width: 990px) {
+          padding: 1rem;
+        }
         @include media-tablet {
             padding: 0;
             :nth-child(3) {
@@ -67,10 +76,20 @@
     }
     &__image {
         display: flex;
+        @media (max-width: 990px) {
+            width: 56.9rem;
+            height: 59.3rem;
+            margin-left: 14rem;
+        }
         @include media-tablet {
             width: 56.9rem;
             height: 59.3rem;
             margin-left: 14rem;
+        }
+        @media (max-width: 715px) {
+            width: 40rem;
+            height: auto;
+            margin-left: 4rem;
         }
         @include media-mobile {
             width: 26rem;
