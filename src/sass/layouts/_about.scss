@@ -20,6 +20,9 @@
         gap: 2.5rem;
         max-width: 43rem;
         width: 100%;   
+        @media (max-width: 577px) {
+            align-items: center;
+        }
         @include media-mobile {
             text-align: center;
             width: 90%;
