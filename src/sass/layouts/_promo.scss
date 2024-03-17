@@ -1,0 +1,111 @@
+.promo {
+    &__wrapper {
+        @include flex($flex-dir: column);
+        gap: 6rem;
+        @include media-tablet {
+            gap: 3rem;
+        }
+        @include media-mobile {
+            gap: 3rem;
+        }
+    }
+    &__content {
+        @include flex($i-align: flex-start);
+        height: 72.8rem;
+        max-width: 128rem;
+        width: 100%;
+        padding: 0 4rem;
+        gap: 4.2rem;
+        @media (max-width: 990px) {
+            flex-direction: column;
+            height: auto;
+            align-items: center;
+            gap: 5rem;
+        }
+        @include media-tablet {
+            flex-direction: column;
+            height: auto;
+            align-items: center;
+            gap: 10rem;
+        }
+        @include media-mobile {
+            padding: 0 1rem;
+            gap: 10.5rem;
+        }
+    }
+    &__filling {
+        @include flex($flex-dir: column, $i-align: flex-start, $justify: flex-start);
+        padding: 16.3rem 0;
+        gap: 4.2rem;
+        max-width: 46rem;
+        width: 100%;
+        @media (max-width: 990px) {
+          padding: 1rem;
+        }
+        @include media-tablet {
+            padding: 0;
+            :nth-child(3) {
+                margin: auto;
+            }
+        }
+        @include media-mobile {
+            text-align: center;
+        }
+    }
+    &__title {
+        margin: 0;
+        color: $color-light;
+        @extend %font-prim;
+        @include font($size: 4.4rem, $height: 130%);
+        letter-spacing: 0;
+        @include media-mobile {
+            font-size: 2.5rem;
+            margin: auto;
+            letter-spacing: 0.15rem;
+        }
+    }
+    &__text {
+        max-width: 46rem;
+        width: 100%;
+        margin: 0;
+        color: $color-gray;
+        @extend %font-add;
+        @include font($size: 1.5rem, $height: 160%);
+        @include media-mobile {
+            
+        }
+    }
+    &__image {
+        display: flex;
+        @media (max-width: 1132px) {
+            width: 56.9rem;
+            height: 59.3rem;
+            margin-top: 13.5rem;
+        }
+        @media (max-width: 990px) {
+            width: 56.9rem;
+            height: 59.3rem;
+            margin-left: 14rem;
+            margin-top: 0;
+        }
+        @include media-tablet {
+            width: 56.9rem;
+            height: 59.3rem;
+            margin-left: 14rem;
+        }
+        @media (max-width: 715px) {
+            width: 40rem;
+            height: auto;
+            margin-left: 4rem;
+        }
+        @include media-mobile {
+            width: 26rem;
+            height: 27.2rem;
+            margin: 0;
+            margin-left: 4rem;
+        }
+    }
+}
+
+
+

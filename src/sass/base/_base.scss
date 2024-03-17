@@ -1,0 +1,74 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+    scroll-behavior: smooth;
+    @media screen and (min-width: $mobile-small-width) {
+        &::-webkit-scrollbar {
+          width: 0.5rem;
+        }
+        &::-webkit-scrollbar-thumb {
+          background-color: $color-light;
+          border-radius: 1rem;
+        }
+      }
+}
+
+.body{
+    background: url(../img/backgrounds/noise_transparent@2x.png), radial-gradient(237.5% 111.8% at 0% 0%, #5B483A 0%, #262425 100%), #211F20;
+    @extend %font-prim;
+    font-size: 1.6rem;
+    line-height: 2.6rem;
+    font-weight: normal;
+    &_light {
+        background: $color-light;
+    }
+}
+
+.wrapper {
+    max-width: 128rem;
+    width: 100%;
+    margin: auto;
+}
+
+h2 {
+    @extend %font-prim;
+    color: $color-title;
+    @include font($size: 3.5rem, $height: 130%);
+    letter-spacing: 0.21rem;
+    @include media-mobile {
+        font-size: 2.5rem;
+        letter-spacing: 0.15rem;
+    }
+}
+
+.logo {
+    text-decoration: none;
+    @include flex($flex-dir: column);
+    gap: 1rem;
+    &__title {
+        margin: 0;
+        color: $color-primary;
+        @extend %font-prim;
+        @include font($size: 3.2rem, $height: 110%);
+        letter-spacing: 0.192rem;
+        
+        .logo_pets & {
+            color: $color-title;
+        }
+    }
+    &__text {
+        margin: 0;
+        color: $color-light;
+        @extend %font-add;
+        @include font($size: 1.3rem, $height: normal);
+        letter-spacing: 0.13rem;
+        
+        .logo_pets & {
+            color: $color-dark;
+        }
+    }
+}
+

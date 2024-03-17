@@ -1,0 +1,78 @@
+.slider {
+    @include flex($justify:space-between);
+    max-width: 128rem;
+    width: 94%;
+    @include media-tablet {
+        width: 92%;
+    }
+    @include media-mobile {
+        flex-wrap: wrap;
+        row-gap: 2rem;
+        justify-content: space-around;
+    }
+    &__wrapper {
+        @include flex();
+        gap: 9rem;
+        max-width: 128rem;
+        width: 100%;
+        @media (max-width: 1126px) {
+            gap: 6rem;
+            .card:nth-child(n + 3) {
+                display: none;
+            }
+        }
+        @media (max-width: 715px) {
+            .card:nth-child(n + 2) {
+                display: none;
+            }
+        }
+        @include media-tablet {
+            gap: 4rem;
+            .card:nth-child(n + 3) {
+                display: none;
+            }
+        }
+        @include media-mobile {
+            .card:nth-child(n + 2) {
+                display: none;
+            } 
+        }
+    }
+}
+
+.card {
+    @include flex($flex-dir: column);
+    background-color: $color-card;
+    border-radius: 1rem;
+    width: 27rem;
+    height: 43.5rem;
+    gap: 1rem;
+    padding-bottom: 2.5rem;
+    &__name {
+        color: $color-title;
+        @include font($size: 2rem, $height: normal);
+        letter-spacing: 0.102rem;
+    }
+}
+
+.slider-friends {
+    @include flex($flex-wrap: wrap);
+    max-width: 128rem;
+    width: 100%;
+    gap: 4.5rem;
+    &__wrapper {
+        @include flex($flex-wrap: wrap);
+        gap: 3rem 3.8rem;
+        @include media-tablet {
+            resize: 1rem;
+            .card:nth-child(n + 7) {
+                display: none;
+            }
+        }
+        @include media-mobile {
+            .card:nth-child(n + 4) {
+                display: none;
+            } 
+        }
+    }
+}

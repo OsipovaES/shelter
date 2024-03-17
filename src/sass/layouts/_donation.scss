@@ -1,0 +1,92 @@
+.donation {
+    background-color: $color-light-add;
+    padding: 8rem 18.2rem 10rem 18.3rem;
+    @include media-mobile {
+        padding: 4.2rem 1rem;
+    }
+    @media (max-width: 715px) {
+        padding: 5rem;
+      }
+      @include media-mobile {
+        padding: 4.2rem 1rem
+      }
+    &__wrapper {
+        @include flex();
+        gap: 3rem;
+        max-width: 128rem;
+        width: 100%;
+        @media (max-width: 990px) {
+            flex-direction: column;
+          }
+        @include media-tablet {
+            flex-direction: column-reverse;
+            gap: 6rem;
+        }
+        @include media-mobile {
+            gap: 4rem;
+        }
+    }
+    &__title {
+        margin: 0;
+        max-width: 30rem;
+        width: 100%;
+        @include media-mobile {
+            max-width: 22rem;
+            width: 100%;
+            margin: auto;
+        }
+    }
+    &__subtitle {
+        @include font ($size: 1.5rem, $height: 110%);
+        margin: 0;
+        color: $color-title;
+        letter-spacing: 0.09rem;
+        @include media-mobile {
+            line-height: 160%;
+            letter-spacing: 0;
+        }
+    }
+    &__content {
+        @include flex($flex-dir: column, $i-align: left);
+        gap: 2rem;
+        margin: 0;
+        max-width: 38rem;
+        width: 100%;
+        @include media-mobile {
+            width: 95%;
+            text-align: center;
+        }
+    }
+    &__card {
+        background-color: $color-primary;
+        margin: 0;
+        border-radius: 1rem;
+        @include flex();
+        gap: 1rem;
+        @include font ($size: 2rem, $height: 115%);
+        color: $color-title;
+        letter-spacing: 0.12rem;
+        width: 35rem;
+        height: 4.3rem;
+        @include media-mobile {
+            font-size: 1.5rem;
+            width: 28rem;
+            margin: auto;
+        }
+    }
+    &__copyright {
+        margin: 0;
+        @extend %font-add;
+        color: $color-copyright;
+        @include font ($size: 1.2rem, $style: italic, $height: 150%);
+        @include media-mobile {
+            text-align: justify;
+        }
+    }
+    &__image {
+        @include media-mobile {
+            width: 26rem;
+            height: 13.5rem;
+        }
+    }
+}

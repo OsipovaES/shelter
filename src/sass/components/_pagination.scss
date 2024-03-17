@@ -1,0 +1,35 @@
+.pagination {
+    @include flex();
+    gap: 2rem;
+    &__btn {
+        border-radius: 100%;
+        border: 2px solid $color-primary;
+        background-color: $color-light-add;
+        width: 5.2rem;
+        height: 5.2rem;
+        padding: 1.4rem 0 1.5rem 0;  
+        cursor: pointer;
+        color: $color-dark;
+        &_disabled {
+            border: 2px solid $color-gray;
+            color: $color-gray;
+            cursor: not-allowed;
+        }
+        &_fill {
+            background-color: $color-primary;
+        }
+        &:hover:not(:disabled) {
+            background-color: $color-active;
+        }
+        &:active:not(:disabled) {
+            background-color: $color-primary;
+        }
+    }  
+    @include media-tablet {
+        padding: 3rem;
+    }
+    @include media-mobile {
+        gap: 1rem;
+        padding: 3rem 1rem;
+    }
+}

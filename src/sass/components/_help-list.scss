@@ -1,0 +1,40 @@
+.help-list {
+    @include flex($flex-wrap: wrap);
+    max-width: 128rem;
+    width: 93%;
+    row-gap: 5.5rem;
+    column-gap: 11.8rem;
+    @include media-tablet {
+        gap: 5rem 5.5rem;
+    }
+    @include media-mobile {
+        gap: 3rem;
+    }
+    &__content {
+        @include flex($flex-dir: column);
+        @include font($size: 2rem, $height: 115%);
+        gap: 3rem;
+        color: $color-title;
+        letter-spacing: 0.12rem;
+        @include media-tablet {
+            width: 18rem;
+            height: 12rem;
+            gap: 3rem;
+        }
+        @include media-mobile {
+            font-size: 1.5rem;
+            gap: 2rem;
+            width: 13rem;
+            height: auto;
+        }
+    }
+    &__image {
+        @include media-mobile {
+            width: 5rem;
+            height: 5rem;
+        }
+    }
+    &__text {
+        margin: 0;
+    }
+}

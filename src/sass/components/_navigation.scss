@@ -1,0 +1,54 @@
+.navigation {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    @include flex();
+    gap: 3.45rem;
+    &__link {
+        margin: 0;
+        padding: 0;
+        @include font($size: 1.5rem, $height: 160%);
+        @extend %font-add;
+        color: $color-gray;
+        text-decoration: none;
+        cursor: pointer;
+        &:hover {
+            color: $color-light;
+            text-decoration: underline $color-primary 0.3rem;
+            text-underline-offset: 1rem;
+            transition: all .3s ease-out;
+        }
+        @include media-mobile {
+            @include font($size: 3.2rem, $height: 160%);
+            &:active {
+                color: $color-light;
+                text-decoration: underline $color-primary 0.3rem;
+                text-underline-offset: 1rem;
+                transition: all .3s ease-out;
+            }
+        }
+        .navigation_pets & {
+            color: $color-title;
+            @media (max-width: 731px){
+                color: $color-gray;
+                &:hover {
+                    color: $color-light;
+                }
+            }
+        }
+    }
+    @media (max-width: 731px) {
+        @include flex($flex-dir:column);
+        top: 0;
+        right: 0;
+        position: absolute;
+        padding: 4.2rem 0;
+        margin: 0;
+        background: $color-dark;
+        list-style-type: none;
+        transform: translateX(-250%);
+        height: 82.3rem;
+        max-width: 32rem;
+        width: 100%;
+    }  
+}

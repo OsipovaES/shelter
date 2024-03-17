@@ -1,0 +1,20 @@
+.pets {
+    background-color: $color-light-add;
+    padding: 8rem 0 10rem 0;
+    @include media-mobile {
+        padding: 4.2rem 1rem;
+    }
+    &__wrapper {
+        @include flex($flex-dir: column);
+        max-width: 128rem;
+        width: 100%;;
+        gap: 6rem;
+        @include media-mobile {
+            gap: 4.3rem;
+        }
+    }
+    &__title {
+        text-align: center;
+        margin: 0;
+    }
+}

@@ -1,0 +1,26 @@
+.help {
+    background-color: $color-light;
+    padding: 8rem 0 10rem 0;
+    @include media-tablet {
+        padding-bottom: 8.8rem;
+    }
+    @include media-mobile {
+        padding: 4.2rem 0;
+    }
+    &__wrapper {
+        @include flex($flex-dir: column);
+        gap: 6rem;
+        max-width: 128rem;
+        width: 100%;
+        @include media-tablet {
+            gap: 6rem;
+        }
+        @include media-mobile {
+            gap: 4.2rem;
+        }
+    }
+    &__title {
+        margin: 0;
+        text-align: center;
+    }
+}

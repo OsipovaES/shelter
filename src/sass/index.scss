@@ -1,0 +1,30 @@
+//Fonts
+@import "./base/_fonts.css";
+
+//Abstracts
+@import "./abstracts/constants";
+@import "./abstracts/mixins";
+@import "./abstracts/placeholders";
+
+//Base
+@import "./base/base";
+@import "./base/buttons";
+
+//Layouts
+@import "./layouts/header";
+@import "./layouts/promo";
+@import "./layouts/about";
+@import "./layouts/pets";
+@import "./layouts/help";
+@import "./layouts/donation";
+@import "./layouts/footer";
+@import "./layouts/friends";
+
+//Components
+@import "./components/navigation";
+@import "./components/slider";
+@import "./components/help-list";
+@import "./components/pagination";
+@import "./components/burger";
+
+

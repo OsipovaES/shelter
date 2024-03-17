@@ -1,0 +1,52 @@
+.about {
+    background-color: $color-light;
+    &__wrapper {
+        @include flex();
+        max-width: 128rem;
+        width: 100%;
+        padding: 8rem 4rem 9rem 4rem;
+        gap: 12rem;
+        @include media-tablet {
+            flex-direction: column-reverse;
+            gap: 8rem;
+        }
+        @include media-mobile {
+            padding: 4.2rem 1rem 3.5rem 1rem;
+            gap: 3.5rem;
+        }
+    }
+    &__content {
+        @include flex($flex-dir:column, $i-align: flex-start);
+        gap: 2.5rem;
+        max-width: 43rem;
+        width: 100%;   
+        @media (max-width: 577px) {
+            align-items: center;
+        }
+        @include media-mobile {
+            text-align: center;
+            width: 90%;
+        }
+    }
+    &__title {
+       margin: 0;
+    }
+    &__text {
+        margin: 0;
+        color: $color-text;
+        @extend %font-add;
+        @include font($size: 1.5rem, $height: 160%);
+        @include media-mobile {
+            text-align: justify;
+        }
+    }
+    &__image {
+        @include media-mobile {
+            width: 26rem;
+            height: 35.3rem;
+        }
+    }
+}
+
+
+

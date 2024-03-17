@@ -1,0 +1,18 @@
+.friends {
+    background-color: $color-light-add;
+    @include flex($t-align: center, $flex-dir: column);
+    gap: 6rem;
+    padding: 8rem 4rem 10rem 4rem;
+    &__title {
+        max-width: 40rem;
+        margin: 0;
+    }
+    @include media-tablet {
+        gap: 2rem;
+        padding: 8rem 4rem 4.5rem 4rem;
+    }
+    @include media-mobile {
+        gap: 1rem;
+        padding: 4rem 2rem 1.5rem 2rem;
+    }
+}
