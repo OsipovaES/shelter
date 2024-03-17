@@ -33,7 +33,7 @@ html {
     margin: auto;
 }
 
-h1 {
+h2 {
     @extend %font-prim;
     color: $color-title;
     @include font($size: 3.5rem, $height: 130%);
