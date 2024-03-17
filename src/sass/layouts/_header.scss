@@ -1,8 +1,12 @@
 .header {
-    @include flex();
-    width: 120rem;
-    height: 6rem;
-    padding: 2.5rem 4rem;
-    gap: 53rem;
+    @include flex($justify: space-between);
+    max-width: 128rem;
+    width: 100%;
+    padding: 3rem 4rem;
+    @include media-tablet {
+        padding: 3rem;
+    }
+    @include media-mobile {
+        padding: 3rem 2rem; 
+    }
 }
-
